@@ -1,0 +1,242 @@
+*, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Economica", sans-serif;
+  object-fit: cover;
+  white-space: normal;
+}
+
+/* Keseluruhan background */
+
+.bgimg {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.wayang-kanan, .wayang-kiri, .okk-ui, .ragam-gelora, .cta-tentang, .awan-kanan, .awan-kiri, .awan-tengah, .awan-float, .awan-kiri2, .awan-kanan2, .text-section3, .misi, .text-misi, .kelapa-kanan, .kelapa-kiri, .text-section4, .kelompok, .text-kelompok, .cta-kelompok {
+  position: absolute;
+  z-index: 2;
+}
+
+.awan-kiri3, .awan-kanan3 {
+  position: absolute;
+  z-index: 1;
+}
+
+.awan-kiri {
+  width: 50%;
+  bottom: 35.7rem;
+  left: -1.5rem;
+}
+
+.awan-tengah {
+  width: 50%;
+  bottom: 26rem;
+  left: 4.5rem;
+}
+
+.awan-kanan {
+  width: 50%;
+  bottom: 31rem;
+  left: 16.5rem;
+}
+
+.wayang-kiri {
+  bottom: 25.7rem;
+  left: 0.5rem;
+  width: 40%;
+}
+
+.wayang-kanan {
+  bottom: 14rem;
+  left: 15.5rem;
+  width: 45%;
+}
+
+.awan-float {
+  width: 90%;
+  bottom: 6rem;
+  left: 2.3em;
+}
+
+.text-section1 {
+  position: absolute;
+  width: 100%;
+  left: 2rem;
+  bottom: 20.2rem;
+  color: #ffc380;
+}
+
+.okk-ui {
+  font-size: 1.2rem;
+}
+
+.ragam-gelora {
+  font-size: 2.2rem;
+  top: 1.5rem;
+}
+
+.cta-tentang {
+  top: 4.5rem;
+  left: 1.5em;
+  width: 8rem;
+  font-size: 1.075rem;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.cta-tentang:hover {
+  cursor: pointer;
+}
+
+.acara, .text-acara {
+  color: #ffc380;
+}
+
+.text-section2 {
+  padding-top: 2rem;
+  width: 95%;
+  padding-left: 1.7rem;
+  font-size: 1.075rem;
+}
+
+.acara {
+  bottom: 0.5rem;
+}
+
+#bg2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #270325f8;
+}
+
+.carousel-indicators {
+  padding-top: 1rem;
+  width: 50%;
+}
+
+.carousel-inner {
+  display: table;
+}
+
+.carousel-item {
+  display: table-row;
+  padding-left: 3rem;
+}
+
+.rumah {
+  padding-top: 2rem;
+  width: 30%;
+  padding-inline: 0.5rem;
+  display: table-cell;
+}
+
+.rumah-gadang {
+  width: 50%;
+}
+
+.awan-kiri2, .awan-kanan2 {
+  width: 55%;
+  position: absolute;
+  top: 15rem;
+}
+
+.awan-kiri2 {
+  right: 15rem;
+}
+
+.awan-kanan2 {
+  left: 15rem;
+}
+
+.text-section3 {
+  text-align: center;
+  width: 80%;
+  top: 122rem;
+}
+
+.misi, .text-misi {
+  bottom: 10rem;
+  width: 85%;
+  left: 4rem;
+}
+
+.misi {
+  left: 3.6rem;
+  bottom: 16rem;
+  font-size: 3rem;
+  color: #ffc380;
+}
+
+.text-misi {
+  font-size: 1.1rem;
+}
+
+.awan-kiri3, .awan-kanan3 {
+  width: 80%;
+  position: absolute;
+  top: 107rem;
+}
+
+.awan-kiri3 {
+  right: 13rem;
+}
+
+.awan-kanan3 {
+  left: 13rem;
+}
+
+.kelapa-kiri, .kelapa-kanan {
+  width: 70%;
+  top: 112rem;
+}
+
+.kelapa-kiri {
+  right: 13rem;
+}
+
+.kelapa-kanan {
+  left: 13rem;
+  padding: 5rem;
+}
+
+.text-section4 {
+  width: 100%;
+  text-align: center;
+  left: 2rem;
+  top: 156rem;
+}
+
+.kelompok {
+  color: #fff;
+  font-size: 3em;
+  bottom: 0.2rem;
+  left: 5.2rem;
+}
+
+.text-kelompok {
+  color: #cbecf7;
+  width: 80%;
+  left: 0.4rem;
+}
+
+.cta-kelompok {
+  top: 4rem;
+  left: 7rem;
+  border-radius: 16px;
+  background-color: #fff;
+  width: 25%;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #986233;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+}
+
+.accordion-button:focus {
+}
+

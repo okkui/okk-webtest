@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Economica&display=swap");
+
+/* Scrollbar for Chrome User */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(19, 19, 19);
+  opacity: 10%;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Economica", sans-serif;
+}
+
+body {
+  background: #110116;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+/* !Navbar */
+.navbar-wrapper {
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  background-color: #1b3888;
+  transform: translateX(200%);
+  z-index: 150;
+}
+
+.nav-inactive {
+  transition: transform 0.5s ease-in;
+}
+
+.nav-active {
+  transform: translateX(100%) !important;
+  transition: transform 0.5s ease-in;
+}
+
+.burger {
+  position: fixed;
+  width: 9.5vw;
+  height: 7.5vw;
+  z-index: 50;
+  transform: translateX(88vw);
+  top: 2vw;
+}
+
+.burger div {
+  width: 7.5vw;
+  height: 1.1vw;
+  border-radius: 5px;
+  background-color: #ffffff;
+  opacity: 0.7;
+  margin: 1vw;
+}
+
+.logo-okk-nav {
+  position: absolute;
+  top: 12vw;
+  left: 16vw;
+}
+
+#logo-okk {
+  width: 20vw;
+}
+
+.close-nav-button {
+  border-radius: 7vw;
+  width: 25vw;
+  height: 8vw;
+  font-size: 4.3vw;
+  top: 90vw;
+  left: 14vw;
+  position: absolute;
+  background-color: #fff;
+  border: none;
+}
+
+.navbar-wrapper ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 35vw 26vw 35vw 0;
+  color: #fff;
+  float: right;
+  /* overflow: hidden; */
+}
+
+.navbar-wrapper ul li {
+  text-decoration: none;
+  margin-right: 5vw;
+  margin-top: 3vw;
+}
+
+.navbar-wrapper ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 5vw;
+}
+
+/**! Backgrounds */
+
+.bg-base-web {
+  display: none;
+}
+
+.bg-base-mobile {
+  width: 102vw;
+  position: relative;
+  right: 1vw;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* !Main Section */
+/** Ini kyknya ada beberapa yang perlu diperbaikin, kalo mau buat ulang juga silakan*/
+.header-cari {
+  width: 100vw;
+  height: 50vw;
+  color: #fff;
+  position: absolute;
+  margin: 0 auto;
+  top: 45vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /** Ini border apus aja, cuma biar gampang liatnya aja tadinya */
+  border: red solid 5px;
+}
+
+.content-cek h1 {
+  font-size: 10vw;
+  font-weight: 600;
+  text-align: center;
+}
+
+#search-bar {
+  width: 60vw;
+  height: 8vw;
+  border: none;
+  border-radius: 20px;
+  padding-left: 15px;
+  margin-top: 2vw;
+}
+
+#search-bar:focus {
+  outline: none;
+  border: 2px solid #5470e2;
+  box-shadow: 0 0 20px #6ea8d8;
+}
+
+/*TODO Search button kalo ditaro ke responsive design mode
+terus dilebarin screennya lama lama berubah gitu marginnya */
+
+#search-button {
+  background: linear-gradient(to bottom right, #5389f5, #c6c6db);
+  position: absolute;
+  right: 18vw;
+  bottom: 17.5vw;
+  width: 10vw;
+  height: 10vw;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 1px 1px 20px #888;
+}
+
+#search-icon {
+  color: #fff;
+  font-size: 5.5vw;
+}
+
+.cta-kembali {
+  width: 45vw;
+  height: 8vw;
+  margin-top: 6vw;
+  margin-left: 7vw;
+  background-color: #383e86;
+  color: #faefdb;
+  border: none;
+  border-radius: 7vw;
+  font-size: 4vw;
+}
+
+/* !Section Sponsor */
+
+.section-sponsor {
+  width: 100vw;
+  height: 180vw;
+  position: relative;
+  bottom: 15vw;
+  background: white;
+}
+
+.wave {
+  width: 100vw;
+  position: relative;
+  bottom: 22vw;
+}
+
+.sponsor-wrapper {
+  width: 80vw;
+  height: 150vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.sponsor {
+  width: 80vw;
+  height: 70vw;
+  text-align: center;
+}
+
+.sponsor h5 {
+  margin-bottom: 7vw;
+  font-size: 7vw;
+}
+
+.sponsor-img {
+  width: 60vw;
+}
+
+/* !Section Footer */
+
+.footer {
+  width: 100vw;
+  height: 120vw;
+  display: flex;
+  background: #000;
+  color: #fff;
+}
+
+.contact-container {
+  width: 50vw;
+  height: 120vw;
+}
+
+.contact-container-left {
+  padding-left: 3vw;
+  padding-top: 2vw;
+}
+
+.contact-container-left h3 {
+  font-size: 5vw;
+}
+
+.contact-row-left {
+  display: flex;
+}
+
+.contact-row-left h4 {
+  font-size: 5vw;
+  margin-top: 2vw;
+}
+
+.contact-row-left i {
+  font-size: 10vw;
+}
+
+.contact-line {
+  width: 10vw;
+}
+
+.contact-container-right {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2vw;
+  padding-top: 2vw;
+  text-align: right;
+}
+
+.contact-row-right h4 {
+  font-size: 5vw;
+}
+
+.hr {
+  width: 30vw;
+  margin: 3vw 0 3vw 7vw;
+  height: 2vw;
+  background: white;
+}
+
+/*!!!DESKTOP  */
+@media only screen and (min-device-width: 1025px) {
+  .bg-base-mobile {
+    display: none;
+    visibility: hidden;
+  }
+
+  .bg-base-web {
+    display: unset;
+    visibility: visible;
+    width: 102vw;
+    position: relative;
+    right: 1vw;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* !!!Navigation Bar */
+  .navbar-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 20vw;
+    background-color: none;
+    background: none;
+    transform: translateX(0%);
+    z-index: 100;
+  }
+
+  .logo-okk-nav {
+    position: absolute;
+    top: 2vw;
+    left: 10vw;
+  }
+
+  #logo-okk {
+    width: 6vw;
+  }
+
+  .close-nav-button {
+    display: none;
+    visibility: hidden;
+  }
+
+  .navbar-wrapper ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    color: #fff;
+    float: right;
+  }
+
+  .navbar-wrapper ul li {
+    text-decoration: none;
+    margin-right: 5vw;
+    margin-top: 3vw;
+  }
+
+  .navbar-wrapper ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2vw;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  /* !Contents */
+
+  /* ?Section Main */
+  /** Ini belum gw buat hehe*/
+
+  /* !Section Sponsor */
+  .section-sponsor {
+    width: 100vw;
+    height: 30vw;
+    position: relative;
+    bottom: 7vw;
+    background: white;
+  }
+
+  .wave {
+    width: 100vw;
+    position: absolute;
+    bottom: 29vw;
+  }
+
+  .sponsor-wrapper {
+    width: 100vw;
+    height: 40vw;
+    display: flex;
+    flex-wrap: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .sponsor {
+    width: 50vw;
+    height: 25vw;
+    text-align: center;
+    flex: 1;
+    margin-bottom: 7vw;
+  }
+
+  #sponsor-kiri {
+    border-right: #000 solid 1px;
+  }
+
+  .sponsor h5 {
+    margin-bottom: 2vw;
+    font-size: 4vw;
+  }
+
+  .sponsor-img {
+    width: 20vw;
+  }
+
+  /* !Section Footer */
+
+  .footer {
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    background: #000;
+    color: #fff;
+  }
+
+  .contact-container {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .contact-container-left {
+    padding-left: 3vw;
+    padding-right: 10vw;
+    padding-top: 2vw;
+  }
+
+  .contact-container-left h3 {
+    font-size: 3vw;
+  }
+
+  .contact-row-left {
+    display: flex;
+  }
+
+  .contact-row-left h4 {
+    font-size: 2vw;
+    margin-top: 2vw;
+  }
+
+  .contact-row-left i {
+    font-size: 6vw;
+  }
+
+  .contact-line {
+    width: 6vw;
+  }
+
+  .contact-container-right {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2vw;
+    padding-top: 2vw;
+    text-align: right;
+  }
+
+  .contact-row-right h4 {
+    font-size: 2vw;
+  }
+
+  .hr {
+    width: 30vw;
+    margin: 3vw 0 3vw 7vw;
+    height: 0.5vw;
+    background: white;
+  }
+}
