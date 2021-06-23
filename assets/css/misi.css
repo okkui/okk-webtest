@@ -1,0 +1,539 @@
+@import url("https://fonts.googleapis.com/css2?family=Economica&display=swap");
+
+.loader-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #fff;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+.disappear {
+  animation: vanish 1s forwards;
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: rgb(19, 19, 19);
+  opacity: 10%;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Economica", sans-serif;
+}
+
+.whole-wrap {
+  background: #110116;
+  z-index: -15;
+  width: 100%;
+  position: relative;
+}
+
+.bg-base-mobile {
+  position: absolute;
+  z-index: -10;
+  width: 100vw;
+}
+
+.bg-base-web {
+  display: none;
+  visibility: hidden;
+}
+
+/* Layout */
+
+.burger {
+  position: fixed;
+  width: 9.5vw;
+  height: 7.5vw;
+  z-index: 50;
+  transform: translateX(88vw);
+  top: 2vw;
+}
+
+.burger div {
+  width: 7.5vw;
+  height: 1.1vw;
+  border-radius: 5px;
+  background-color: #000000;
+  opacity: 0.7;
+  margin: 1vw;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.section-acara, .section-misi {
+  height: 216vw;
+}
+
+
+.section-credits {
+  height: 216vw;
+}
+
+.section-footer {
+  height: 215vw;
+  display: grid;
+}
+
+/* Text OKK */
+
+.title-okk {
+  color: #ffc380;
+  width: 60%;
+  position: relative;
+  top: 30vw;
+  left: 10vw;
+}
+
+.title-okk h3 {
+  font-size: 5vw;
+}
+
+.title-okk h1 {
+  font-size: 10vw;
+}
+
+/* CTA Button Tentang OKK UI 2021 */
+
+.title-okk a {
+  position: relative;
+  top: 2vw;
+  left: 6vw;
+}
+
+.cta-tentang {
+  border-radius: 7vw;
+  width: 60%;
+  height: 8vw;
+  font-size: 4.3vw;
+  background-color: #fff;
+  border: none;
+}
+
+.cta-tentang:hover {
+  opacity: 80%;
+}
+
+/* !Acara */
+
+.content {
+  width: 100vw;
+  margin: 0 auto;
+  height: 75vw;
+  position: relative;
+}
+
+/* ?Title Misi */
+
+.wrap-content-misi {
+  margin-top: 30vw;
+}
+
+.title-misi {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 8vw;
+  width: 80%;
+  z-index: 1;
+}
+
+.title-misi h1 {
+  color: #ffc380;
+  font-size: 10vw;
+}
+
+.title-misi p {
+  font-size: 4.5vw;
+  color: #fff;
+  z-index: 5;
+}
+
+/* ?Pohon Kelapa */
+.pohon-kelapa {
+  width: 100%;
+  position: relative;
+  bottom: 80vw;
+}
+
+.pohon-kelapa img {
+  width: 45%;
+  position: relative;
+}
+
+.kelapa-kanan {
+  left: 18vw;
+}
+
+.kelapa-kiri {
+  right: 8vw;
+}
+
+/* Bagian Sponsor */
+
+.section-credits {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.text-sponsor {
+  width: 100%;
+  height: 15vw;
+}
+
+.sponsor-wrap {
+  margin-top: 45vw;
+}
+
+.text-sponsor h2 {
+  font-size: 8vw;
+  margin: 0 auto;
+}
+
+.company-logo {
+  margin-top: 10vw;
+  margin-bottom: -25vw;
+  width: 50%;
+}
+/* Web Properties */
+
+@media only screen and (min-device-width: 1224px) {
+  .bg-base-mobile {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .bg-base-web {
+    display: unset;
+    visibility: visible;
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .section-credits {
+    height: 37vw;
+  }
+}
+
+/* Text OKK */
+
+@media only screen and (min-device-width: 1224px) {
+  .title-okk {
+    width: 60%;
+    top: -1vw;
+    left: 10vw;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .title-okk h3 {
+    font-size: 3vw;
+    color: coral;
+    position: absolute;
+    left: 19.5vw;
+    top: -4.3vw;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .title-okk h1 {
+    font-size: 6vw;
+  }
+}
+
+/* CTA Button Tentang OKK UI 2021 */
+
+@media only screen and (min-device-width: 1224px) {
+  .title-okk a {
+    position: relative;
+    top: 0vw;
+    left: 2.5vw;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .cta-tentang {
+    border-radius: 7vw;
+    width: 25vw;
+    height: 6vw;
+    font-size: 3vw;
+    background-color: #fff;
+    border: none;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .cta-tentang:hover {
+    opacity: 80%;
+    cursor: pointer;
+  }
+}
+
+/* !Acara */
+
+@media only screen and (min-device-width: 1224px) {
+  .title-acara {
+    color: #ffc380;
+    margin: 0 auto;
+    width: 75%;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .title-acara h1 {
+    font-size: 5vw;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .title-acara p {
+    font-size: 3vw;
+  }
+}
+
+/* ?Title Misi */
+
+@media only screen and (min-device-width: 1224px) {
+  .wrap-content-misi {
+    margin-top: -4vw;
+    width: fit-content;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .title-misi h1 {
+    font-size: 8vw;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .title-misi p {
+    font-size: 3.5vw;
+  }
+}
+
+/* ?Pohon Kelapa */
+
+@media only screen and (min-device-width: 1224px) {
+  .pohon-kelapa {
+    width: 100%;
+    position: relative;
+    bottom: 82vw;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .pohon-kelapa img {
+    width: 40%;
+    position: relative;
+    z-index: -1;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .kelapa-kanan {
+    left: 25vw;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .kelapa-kiri {
+    right: 8vw;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) {
+
+  body {
+    background-image: url("../image/desktop/bg-webmisi.png");
+    background-size: cover;
+  }
+
+  .sponsor-wrap {
+    margin-top: 0;
+    width: 50%;
+    height: 20vw;
+    flex: 1;
+    flex-direction: row;
+  }
+
+  .sponsor-wrap-right {
+    border-right: #000 solid 1px;
+  }
+
+  .text-sponsor h2 {
+    font-size: 3.5vw;
+    margin: 0 auto 2vw auto;
+  }
+
+  .company-logo {
+    margin-top: 0vw;
+    margin-bottom: 10vw;
+    width: 20vw;
+  }
+
+  .tagline-wrap {
+    float: right;
+    width: 90%;
+  }
+
+  .tagline-wrap div, .tagline-wrap hr {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .text-sponsor {
+    width: 100%;
+    height: 15vw;
+    display: flex;
+    margin-top: 10vw;
+  }
+
+  .section-credits {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .wave {
+    display: none;
+  }
+
+  .div-accordion {
+    align-items: flex-end;
+  }
+
+  .container {
+    width:100%;
+  }
+
+  header {
+    height:240px;
+  }
+}
+
+@media only screen and (max-device-width: 1024px) {
+  body {
+    background-image: url("../image/mobile/bg-mobilemisi.png");
+    background-size: cover;
+  }
+
+  .container {
+    margin-top: 120px;
+    height:140vh;
+    justify-content: center;
+  }
+
+  .section-credits {
+    background-color: #ffffff;
+  }
+
+  .wrapper-accordion {
+    width: 100%;
+
+  }
+
+  .div-accordion {
+    align-items: center;
+  }
+}

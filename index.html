@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OKK UI 2021</title>
+
+    <!-- !!!Links -->
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="noscroll">
+    <div class="whole-wrap">
+      <!-- !Navbar -->
+      <nav id="navbar-wrapper" class="navbar-wrapper">
+        <div class="logo-okk-nav">
+          <a href="index.html"
+            ><img id="logo-okk" src="assets/image/ornament/logo-okk.png" alt=""
+          /></a>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="assets/html/misi.html">Misi</a></li>
+          <li><a href="assets/html/kelompok.html">Kelompok</a></li>
+          <li><a href="assets/html/tentang.html">Tentang</a></li>
+          <li><a href="assets/html/kontak.html">Kontak</a></li>
+        </ul>
+        <button class="close-nav-button" onclick="closeMenu()">TUTUP</button>
+      </nav>
+      <div class="burger" onclick="openMenu()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <!-- !Section1 -->
+      <div class="wrapper section-landing">
+        <!-- Desktop Landing Background -->
+        <img
+          id="image-web1"
+          class="bg-base-web hidden"
+          src="assets/image/desktop/bg-weblanding1.png"
+        />
+        <!-- Mobile Landing Background -->
+        <img
+          class="bg-base-mobile"
+          src="assets/image/mobile/bg-mobilelanding1.png"
+        />
+        <div class="awan">
+          <img class="awan-kiri" src="assets/image/ornament/awan-kiri.png" />
+          <img
+            class="awan-tengah"
+            src="assets/image/ornament/awan-tengah.png"
+          />
+          <img class="awan-kanan" src="assets/image/ornament/awan-kanan.png" />
+        </div>
+        <div class="wayang">
+          <img
+            src="assets/image/ornament/wayang-kiri.png"
+            class="wayang-kiri"
+          />
+          <img
+            src="assets/image/ornament/wayang-kanan.png"
+            class="wayang-kanan"
+          />
+          <div class="title-okk">
+            <h3>OKK UI 2021</h3>
+            <h1>RAGAM GELORA</h1>
+            <a href="assets/html/tentang.html"
+              ><button class="cta-tentang">TENTANG OKK UI 2021</button></a
+            >
+            <img
+              src="assets/image/ornament/awan-float.png"
+              class="awan-float-web"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- *Section2 -->
+      <div class="wrapper section-acara">
+        <img
+          id="image-web2"
+          class="bg-base-web"
+          src="assets/image/desktop/bg-weblanding2.png"
+        />
+        <img
+          class="bg-base-mobile"
+          src="assets/image/mobile/bg-mobilelanding2.png"
+        />
+        <div class="content">
+          <div class="title-acara">
+            <img
+              class="awan-kanan-web"
+              src="assets/image/ornament/awan-kanan.png"
+            />
+            <h1>ACARA</h1>
+            <p>
+              Ikuti Oka dan Oki menjelajahi tempat baru yang akan menjadi
+              tempatmu berkembang dan menambah wawasan
+            </p>
+
+            <!-- !!!CAROUSEL -->
+            <!-- Swiper -->
+            <div class="carousel-acara">
+              <div class="swiper-container swiper-container-acara swiper-acara">
+                <div class="swiper-wrapper swiper-wrapper-acara">
+                  <div class="swiper-slide swiper-slide-acara">
+                    <img
+                      id="rumah-tongkonan"
+                      class="rumah"
+                      src="assets/image/ornament/rumah-tongkonan.png"
+                      alt=""
+                    />
+                    <h5>PKKMB</h5>
+                    <p>14-15 Juli</p>
+                  </div>
+                  <div class="swiper-slide swiper-slide-acara">
+                    <img
+                      class="rumah"
+                      src="assets/image/ornament/rumah-gadang.png"
+                      alt=""
+                    />
+                    <h5>Hari Puncak OKK UI 2021</h5>
+                    <p>14-15 Juli</p>
+                  </div>
+                  <div class="swiper-slide swiper-slide-acara">
+                    <img
+                      id="rumah-bali"
+                      class="rumah"
+                      src="assets/image/ornament/rumah-bali.png"
+                      alt=""
+                    />
+                    <h5>UI Welcomes U! Part 1</h5>
+                    <p>14-15 Juli</p>
+                  </div>
+                  <div class="swiper-slide swiper-slide-acara">
+                    <img
+                      id="rumah-joglo"
+                      class="rumah"
+                      src="assets/image/ornament/rumah-joglo.png"
+                      alt=""
+                    />
+                    <h5>UI Welcomes U! Part 2</h5>
+                    <p>14-15 Juli</p>
+                  </div>
+                  <div class="swiper-slide swiper-slide-acara">
+                    <img
+                      id="rumah-honai"
+                      class="rumah"
+                      src="assets/image/ornament/rumah-honai.png"
+                      alt=""
+                    />
+                    <h5>Mentoring #1</h5>
+                    <p>14-15 Juli</p>
+                  </div>
+                  <div class="swiper-slide swiper-slide-acara">
+                    <img
+                      id="rumah-limas"
+                      class="rumah"
+                      src="assets/image/ornament/rumah-limas.png"
+                      alt=""
+                    />
+                    <h5>Mentoring #2</h5>
+                    <p>14-15 Juli</p>
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <!-- !!!END OF CAROUSEL -->
+          </div>
+        </div>
+      </div>
+      <!-- *Section3 -->
+      <div class="wrapper section-misi">
+        <img
+          id="image-web3"
+          class="bg-base-web"
+          src="assets/image/desktop/bg-weblanding3.png"
+        />
+        <img
+          class="bg-base-mobile"
+          src="assets/image/mobile/bg-mobilelanding3.png"
+        />
+        <div class="wrap-content-misi">
+          <div class="title-misi">
+            <h1>Misi</h1>
+            <p>
+              Kuajak kamu mengenal indahnya semesta ini sehingga tumbuhlah rasa
+              bangga dalam dirimu melalui misi-misi di OKK UI 2021
+            </p>
+          </div>
+
+          <!-- !!!CAROUSEL MISI-->
+          <!-- Swiper -->
+          <div class="carousel-misi">
+            <div class="swiper-container swiper-container-misi swiper-misi">
+              <div class="swiper-wrapper swiper-wrapper-misi">
+                <div class="swiper-slide swiper-slide-misi">
+                  <a href="">
+                    <img
+                      class="carousel-misi-item"
+                      src="assets/image/ornament/rumah-joglo.png"
+                      alt=""
+                    />
+                    <h5>Misi 1</h5>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-slide-misi">
+                  <a href="#">
+                    <img
+                      class="carousel-misi-item"
+                      src="assets/image/ornament/rumah-joglo.png"
+                      alt=""
+                    />
+                    <h5>Misi 2</h5>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-slide-misi">
+                  <a href="">
+                    <img
+                      class="carousel-misi-item"
+                      src="assets/image/ornament/rumah-joglo.png"
+                      alt=""
+                    />
+                    <h5>Misi 3</h5>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-slide-misi">
+                  <a href="">
+                    <img
+                      class="carousel-misi-item"
+                      src="assets/image/ornament/rumah-joglo.png"
+                      alt=""
+                    />
+                    <h5>Misi 4</h5>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-slide-misi">
+                  <a href="">
+                    <img
+                      class="carousel-misi-item"
+                      src="assets/image/ornament/rumah-joglo.png"
+                      alt=""
+                    />
+                    <h5>Misi 5</h5>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-slide-misi">
+                  <a href="">
+                    <img
+                      class="carousel-misi-item"
+                      src="assets/image/ornament/rumah-joglo.png"
+                      alt=""
+                    />
+                    <h5>Misi 6</h5>
+                  </a>
+                </div>
+              </div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next swiper-arrow-misi"></div>
+              <div class="swiper-button-prev swiper-arrow-misi"></div>
+            </div>
+          </div>
+          <!-- !!!END OF CAROUSEL MISI -->
+
+          <div class="element-misi">
+            <div class="awan-misi">
+              <img
+                class="awan-misikiri"
+                src="assets/image/ornament/awan-kiri.png"
+              />
+              <img
+                class="awan-misikanan"
+                src="assets/image/ornament/awan-kanan.png"
+              />
+            </div>
+            <div class="pohon-kelapa">
+              <img
+                class="kelapa-kiri"
+                src="assets/image/ornament/kelapa-kiri.png"
+              />
+              <img
+                class="kelapa-kanan"
+                src="assets/image/ornament/kelapa-kanan.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- *Section4 -->
+      <div class="wrapper section-kelompok">
+        <img
+          id="image-web4"
+          class="bg-base-web"
+          src="assets/image/desktop/bg-weblanding4.png"
+        />
+        <img
+          class="bg-base-mobile"
+          src="assets/image/mobile/bg-mobilelanding4.png"
+        />
+        <div class="title-kelompok">
+          <h1>Kelompok</h1>
+          <p>
+            Ayo cari tahu kelompok dan kakak mentor kamu yang akan menemani kamu
+            selama OKK UI berlangsung!
+          </p>
+          <a href="assets/html/kelompok.html"
+            ><button class="cta-kelompok">CEK DI SINI</button></a
+          >
+        </div>
+      </div>
+      <!-- *Section5 -->
+      <div class="wrapper section-credits">
+        <img
+          id="image-web5"
+          class="bg-base-web"
+          src="assets/image/desktop/bg-weblanding5.png"
+        />
+        <img
+          class="bg-base-mobile"
+          src="assets/image/mobile/bg-mobilelanding5.png"
+        />
+        <div class="text-sponsor">
+          <div class="sponsor-wrap sponsor-wrap-right">
+            <h2>Disponsori oleh</h2>
+            <img
+              class="company-logo"
+              src="assets/image/ornament/rumah-honai.png"
+              alt=""
+            />
+          </div>
+          <div class="sponsor-wrap">
+            <h2>Rekan Media</h2>
+            <img
+              src="assets/image/ornament/rumah-honai.png"
+              class="company-logo"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- *Section6 Mobile Only-->
+      <div class="wrapper section-footer">
+        <img
+          class="bg-base-mobile"
+          src="assets/image/mobile/bg-mobilelanding6.png"
+        />
+        <div class="contact-footer">
+          <div class="contact-footer-content">
+            <div class="contact-div">
+              <h3>Linimasa:</h3>
+            </div>
+            <div class="contact-div">
+              <img
+                class="contact-icon contact-line"
+                src="https://img.icons8.com/windows/500/ffffff/line-me.png"
+              />
+              <h4>@okkui</h4>
+            </div>
+            <div class="contact-div">
+              <i class="contact-icon bx bxl-instagram"></i>
+              <h4>@okk_ui</h4>
+            </div>
+            <div class="contact-div">
+              <i class="contact-icon bx bxl-twitter"></i>
+              <h4>@OKK_UI</h4>
+            </div>
+            <div class="contact-div">
+              <i class="contact-icon bx bxl-facebook-square"></i>
+              <h4>OKK UI</h4>
+            </div>
+            <div class="contact-person">
+              <h4>Rayyan | (085711383842)</h4>
+              <h4>Aurel | (085776962014)</h4>
+              <h4>Baihaqi | (082115790702)</h4>
+              <hr />
+            </div>
+          </div>
+          <div class="contact-footer-content"></div>
+          <div class="contact-footer-content">
+            <div class="tagline-wrap">
+              <div>
+                <h4>#OKKUI2021</h4>
+              </div>
+              <div>
+                <h4>#RagamGelora</h4>
+              </div>
+              <hr style="border: 1vw solid white; width: 100%" />
+              <div>
+                <h4>OKK UI 2021</h4>
+              </div>
+              <div>
+                <h4>Bersama Merajut Cita</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loading Screen Animation -->
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <!-- !!!Script Areas -->
+    <!-- *Animejs -->
+    <script src="assets/js/anime.min.js"></script>
+
+    <!-- *Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- *Swiperjs -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- ?Loading Screen Script -->
+    <script>
+      var noScroll = document.querySelector("body");
+      var loader = document.querySelector(".loader-wrapper");
+
+      window.addEventListener("load", vanish);
+
+      function vanish() {
+        loader.classList.add("disappear");
+        noScroll.classList.remove("noscroll");
+      }
+    </script>
+
+    <!-- ?Animation Script animejs -->
+    <script>
+      anime({
+        targets: ".awan",
+        translateX: 150,
+        direction: "alternate",
+        loop: true,
+        easing: "easeInOutSine",
+        duration: 10000,
+      });
+    </script>
+
+    <!-- ?Swiper Script swiperjs-->
+    <script>
+      var swiper = new Swiper(".swiper-container-acara", {
+        slidesPerView: 2.5,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      var swiperMisi = new Swiper(".swiper-container-misi", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <!-- ?Hamburger Navbar -->
+    <script>
+      function openMenu() {
+        const burgerClick = document.getElementById("navbar-wrapper");
+        burgerClick.classList.remove("nav-inactive");
+        burgerClick.classList.add("nav-active");
+      }
+
+      function closeMenu() {
+        const tutupClick = document.getElementById("navbar-wrapper");
+        tutupClick.classList.remove("nav-active");
+        tutupClick.classList.add("nav-inactive");
+      }
+    </script>
+  </body>
+</html>
