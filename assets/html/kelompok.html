@@ -1,157 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OKK UI 2021 | Kelompok</title>
-    <!-- !!!Links -->
-    <link rel="stylesheet" href="../css/kelompok.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <body class="noscroll">
-        <div class="whole-wrap">
-          <!-- !Navbar -->
-          <nav id="navbar-wrapper" class="navbar-wrapper">
-            <div class="logo-okk-nav">
-              <a href="index.html"
-                ><img id="logo-okk" src="../image/ornament/logo-okk.png" alt=""
-              /></a>
-            </div>
-            <ul>
-              <li><a href="../../index.html">Home</a></li>
-              <li><a href="misi.html">Misi</a></li>
-              <li><a href="kelompok.html">Kelompok</a></li>
-              <li><a href="tentang.html">Tentang</a></li>
-              <li><a href="">Kontak</a></li>
-            </ul>
-            <button class="close-nav-button" onclick="closeMenu()">TUTUP</button>
-          </nav>
-          <div class="burger" onclick="openMenu()">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-
-          <!-- !!!Section Main -->
-          <section class="wrapper">
-            <img class="bg-base-web" src="../image/desktop/bg-webkelompok.png" alt="">
-            <img src="../image/mobile/bg-mobilekelompok.png" alt="" class="bg-base-mobile">
-            <header class="header-cari">
-              <div class="content-cek">
-                <h1>Cek Kelompokmu!</h1>
-                <input id="search-bar" type="search" maxlength="12" placeholder="Masukkan NPM">
-                <button id="search-button"><i id="search-icon" class='bx bx-search'></i></button>
-                <br>
-                <a href="../../index.html"><button class="cta-kembali">< Kembali ke Halaman Utama</button></a>
-              </div>
-            </header>
-          </section>
-
-          <!-- !!!Section Sponsor -->
-        <section class="section-sponsor">
-          <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,256L40,234.7C80,213,160,171,240,170.7C320,171,400,213,480,197.3C560,181,640,107,720,69.3C800,32,880,32,960,69.3C1040,107,1120,181,1200,202.7C1280,224,1360,192,1400,176L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
-          <div class="sponsor-wrapper">
-            <div id="sponsor-kiri" class="sponsor">
-              <h5>Disponsori Oleh</h5>
-              <img class="sponsor-img" src="../image/ornament/rumah-honai.png" alt="">
-            </div>
-            <div class="sponsor">
-              <h5>Rekan Media</h5>
-              <img class="sponsor-img" src="../image/ornament/rumah-honai.png" alt="">
-            </div>
-          </div>
-        </section>
-
-        <!-- !!!Footer -->
-        <footer class="footer">
-          <div class="contact-container contact-container-left">
-            <h3>Linimasa:</h3>
-
-            <div class="contact-row-left">
-              <img
-                  class="contact-icon contact-line"
-                  src="https://img.icons8.com/windows/500/ffffff/line-me.png"
-                />
-              <h4>@OKK_UI</h4>
-            </div>
-
-            <div class="contact-row-left">
-              <img
-                  class="contact-icon contact-line"
-                  src="https://img.icons8.com/windows/500/ffffff/line-me.png"
-                />
-              <h4>@OKK_UI</h4>
-            </div>
-
-            <div class="contact-row-left">
-              <i class="contact-icon bx bxl-instagram"></i>
-              <h4>@okk_ui</h4>
-            </div>
-
-            <div class="contact-row-left">
-              <i class="contact-icon bx bxl-twitter"></i>
-              <h4>@OKK_UI</h4>
-            </div>
-
-            <div class="contact-row-left">
-              <i class="contact-icon bx bxl-facebook-square"></i>
-              <h4>OKK UI</h4>
-            </div>
-
-            <div class="contact-row-left">
-            <h4>Rayyan  &ensp;| (085711383842)
-              <br>
-                Aurel   &emsp;| (085776962014)
-                <br>
-                Baihaqi &ensp;| (082115790702)</h4>
-            </div>
-          </div>
-
-          <div class="contact-container contact-container-right">
-            <div class="contact-row contact-row-right">
-              <h4>#OKKUI2021</h4>
-              <h4>#RagamGelora</h4>
-              <div class="hr"></div>
-              <h4>OKK UI 2021</h4>
-              <h4>Bersama Merajut Cita</h4>
-              </div>
-          </div>
-        </footer>
-
-        <!-- !Scripts -->
-        <script>
-          function openMenu() {
-            const burgerClick = document.getElementById("navbar-wrapper");
-            burgerClick.classList.remove("nav-inactive");
-            burgerClick.classList.add("nav-active");
-          }
-    
-          function closeMenu() {
-            const tutupClick = document.getElementById("navbar-wrapper");
-            tutupClick.classList.remove("nav-active");
-            tutupClick.classList.add("nav-inactive");
-          }
-        </script>
-  </body>
-</html>
-=======
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -172,6 +18,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="../css/footer.css">
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
@@ -179,6 +26,57 @@
   </head>
   <body>
     <div id="root"></div>
+    <footer class="wrapper1 section-footer">
+      <div class="contact-footer">
+          <div class="contact-footer-content">
+              <div class="contact-div">
+                  <h3>Linimasa:</h3>
+              </div>
+              <div class="contact-div">
+                  <img
+                      class="contact-icon contact-line"
+                      src="https://img.icons8.com/windows/500/ffffff/line-me.png"
+                  />
+                  <h4>@okkui</h4>
+              </div>
+              <div class="contact-div">
+                  <i class="contact-icon bx bxl-instagram"></i>
+                  <h4>@okk_ui</h4>
+              </div>
+              <div class="contact-div">
+                  <i class="contact-icon bx bxl-twitter"></i>
+                  <h4>@OKK_UI</h4>
+              </div>
+              <div class="contact-div">
+                  <i class="contact-icon bx bxl-facebook-square"></i>
+                  <h4>OKK UI</h4>
+              </div>
+              <div class="contact-person">
+                  <h4>Rayyan | (085711383842)</h4>
+                  <h4>Aurel | (085776962014)</h4>
+                  <h4>Baihaqi | (082115790702)</h4>
+                  <hr />
+              </div>
+          </div>
+          <div class="contact-footer-content"></div>
+          <div class="contact-footer-content">
+              <div class="tagline-wrap">
+              <div>
+                  <h4>#OKKUI2021</h4>
+              </div>
+              <div>
+                  <h4>#RagamGelora</h4>
+              </div>
+              <hr style="border: 1vw solid white; width: 100%" />
+              <div>
+                  <h4>OKK UI 2021</h4>
+              </div>
+              <div>
+                  <h4>Bersama Merajut Cita</h4>
+              </div>
+          </div>
+      </div>
+  </footer>
 
     <script
       src="https://unpkg.com/react@17/umd/react.development.js"
@@ -196,4 +94,3 @@
     </script>
   </body>
 </html>
->>>>>>> bd9e948fb975f52b5fe4ee88e6583c0b19543233

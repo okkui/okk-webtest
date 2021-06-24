@@ -1,132 +1,133 @@
 .burger {
-    position: fixed;
-    width: 9.5vw;
-    height: 7.5vw;
-    z-index: 50;
-    transform: translateX(88vw);
-    top: 2vw;
+  position: fixed;
+  width: 9.5vw;
+  height: 7.5vw;
+  z-index: 50;
+  transform: translateX(88vw);
+  top: 2vw;
 }
 
 .burger div {
-    width: 7.5vw;
-    height: 1.1vw;
-    border-radius: 5px;
-    background-color: #000000;
-    opacity: 0.7;
-    margin: 1vw;
+  width: 7.5vw;
+  height: 1.1vw;
+  border-radius: 5px;
+  background-color: #000000;
+  opacity: 0.7;
+  margin: 1vw;
 }
 
 .nav-inactive {
-    transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
 }
 
 .nav-active {
-    transform: translateX(100%) !important;
-    transition: transform 0.5s ease-in;
+  transform: translateX(100%) !important;
+  transition: transform 0.5s ease-in;
 }
 
 .logo-okk-nav {
-    position: absolute;
-    top: 12vw;
-    left: 16vw;
+  position: absolute;
+  top: 12vw;
+  left: 16vw;
 }
 
 #logo-okk {
-    width: 20vw;
+  width: 20vw;
 }
 
 .close-nav-button {
-    border-radius: 7vw;
-    width: 25vw;
-    height: 8vw;
-    font-size: 4.3vw;
-    top: 90vw;
-    left: 14vw;
-    position: absolute;
-    background-color: #fff;
-    border: none;
+  border-radius: 7vw;
+  width: 25vw;
+  height: 8vw;
+  font-size: 4.3vw;
+  top: 90vw;
+  left: 14vw;
+  position: absolute;
+  background-color: #fff;
+  border: none;
 }
 
 .navbar-wrapper ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    margin: 35vw 26vw 35vw 0;
-    color: #fff;
-    float: right;
-    /* overflow: hidden; */
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 35vw 26vw 35vw 0;
+  color: #fff;
+  float: right;
+  /* overflow: hidden; */
 }
 
 .navbar-wrapper ul li {
-    text-decoration: none;
-    margin-right: 5vw;
-    margin-top: 3vw;
+  text-decoration: none;
+  margin-right: 5vw;
+  margin-top: 3vw;
 }
 
 .navbar-wrapper ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 5vw;
+  text-decoration: none;
+  color: #fff;
+  font-size: 5vw;
 }
 
 @media only screen and (min-device-width: 1025px) {
-    .navbar-wrapper {
-        width: 100%;
-        background-color: none;
-        background: none;
-        transform: translateX(0%);
-        z-index: 100;
-    }
+  .navbar-wrapper {
+    width: 100%;
+    background-color: none;
+    background: none;
+    transform: translateX(0%);
+    z-index: 100;
+  }
 
-    .navbar-wrapper ul {
-        list-style-type: none;
-        display: flex;
-        flex-direction: row;
-        margin: 0;
-        color: #fff;
-        float: right;
-    }
-    
-    .navbar-wrapper ul li {
-        text-decoration: none;
-        margin-right: 5vw;
-        margin-top: 3vw;
-    }
-    
-    .navbar-wrapper ul li a {
-        text-decoration: none;
-        color: #000;
-        font-size: 2vw;
-    }
+  .navbar-wrapper ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    color: #fff;
+    float: right;
+  }
 
-    .logo-okk-nav {
-        position: absolute;
-        top: 2vw;
-        left: 10vw;
-    }
-    
-    #logo-okk {
-        width: 6vw;
-    }
-    
-    .close-nav-button {
-        display: none;
-        visibility: hidden;
-    }
+  .navbar-wrapper ul li {
+    text-decoration: none;
+    margin-right: 5vw;
+    margin-top: 3vw;
+  }
 
-    .burger {
-        display: none;
-    }
+  .navbar-wrapper ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2vw;
+  }
+
+  .logo-okk-nav {
+    position: absolute;
+    top: 2vw;
+    left: 10vw;
+  }
+
+  #logo-okk {
+    width: 6vw;
+  }
+
+  .close-nav-button {
+    display: none;
+    visibility: hidden;
+  }
+
+  .burger {
+    display: none;
+  }
 }
 
 @media only screen and (max-device-width: 1025px) {
-    .navbar-wrapper {
-        width: 50%;
-        height: 100vh;
-        background-color: #a03c1e;
-        transform: translateX(200%);
-        z-index: 150;
-        position: fixed;
-    }
+  .navbar-wrapper {
+    width: 50%;
+    height: 100vh;
+    background-color: #a03c1e;
+    transform: translateX(200%);
+    z-index: 150;
+    position: fixed;
+    top: 0;
+  }
 }

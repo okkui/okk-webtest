@@ -136,6 +136,9 @@ const Kelompok = () => {
           <nav>
             <ul>
               <li className="menu menu-border-right">
+                <a href="../../index.html">Home</a>
+              </li>
+              <li className="menu menu-border-right">
                 <a href="../html/misi.html">Misi</a>
               </li>
               <li className="menu menu-border-right">
@@ -196,7 +199,7 @@ const Kelompok = () => {
             </div>
           </div>
         </div>
-        <footer>
+        {/* <footer>
           <ul>
             <li>
               <a href="../html/misi.html">Misi</a>
@@ -211,7 +214,7 @@ const Kelompok = () => {
               <a href="../html/kontak.html">Kontak</a>
             </li>
           </ul>
-        </footer>
+        </footer> */}
       </div>
     </div>
   );
