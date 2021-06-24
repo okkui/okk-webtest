@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>OKK UI 2021</title>
 
     <!-- !!!Links -->
     <link rel="stylesheet" href="assets/css/home.css" />
@@ -437,44 +437,44 @@
 
     <!-- ?Loading Screen Script -->
     <script>
-      var noScroll = document.querySelector("body");
-      var loader = document.querySelector(".loader-wrapper");
+      var noScroll = document.querySelector('body');
+      var loader = document.querySelector('.loader-wrapper');
 
-      window.addEventListener("load", vanish);
+      window.addEventListener('load', vanish);
 
       function vanish() {
-        loader.classList.add("disappear");
-        noScroll.classList.remove("noscroll");
+        loader.classList.add('disappear');
+        noScroll.classList.remove('noscroll');
       }
     </script>
 
     <!-- ?Animation Script animejs -->
     <script>
       anime({
-        targets: ".awan",
+        targets: '.awan',
         translateX: 150,
-        direction: "alternate",
+        direction: 'alternate',
         loop: true,
-        easing: "easeInOutSine",
+        easing: 'easeInOutSine',
         duration: 10000,
       });
     </script>
 
     <!-- ?Swiper Script swiperjs-->
     <script>
-      var swiper = new Swiper(".swiper-container-acara", {
+      var swiper = new Swiper('.swiper-container-acara', {
         slidesPerView: 2.5,
         spaceBetween: 20,
         pagination: {
-          el: ".swiper-pagination",
+          el: '.swiper-pagination',
           clickable: true,
         },
       });
 
-      var swiperMisi = new Swiper(".swiper-container-misi", {
+      var swiperMisi = new Swiper('.swiper-container-misi', {
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
       });
     </script>
@@ -482,15 +482,15 @@
     <!-- ?Hamburger Navbar -->
     <script>
       function openMenu() {
-        const burgerClick = document.getElementById("navbar-wrapper");
-        burgerClick.classList.remove("nav-inactive");
-        burgerClick.classList.add("nav-active");
+        const burgerClick = document.getElementById('navbar-wrapper');
+        burgerClick.classList.remove('nav-inactive');
+        burgerClick.classList.add('nav-active');
       }
 
       function closeMenu() {
-        const tutupClick = document.getElementById("navbar-wrapper");
-        tutupClick.classList.remove("nav-active");
-        tutupClick.classList.add("nav-inactive");
+        const tutupClick = document.getElementById('navbar-wrapper');
+        tutupClick.classList.remove('nav-active');
+        tutupClick.classList.add('nav-inactive');
       }
     </script>
   </body>

@@ -1,0 +1,666 @@
+@import url("https://fonts.googleapis.com/css2?family=Economica&display=swap");
+
+.loader-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+.disappear {
+  animation: vanish 1s forwards;
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* Loading overflow-hidden */
+.noscroll {
+  overflow: hidden;
+}
+
+/* Scrollbar for Chrome User */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(19, 19, 19);
+  opacity: 10%;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Economica", sans-serif;
+  
+}
+
+body {
+  background: #110116;
+  overflow-x: hidden;
+  
+}
+
+.bg-base-mobile {
+  position: absolute;
+  z-index: -10;
+  width: 100vw;
+  height: 120vw;
+}
+
+.bg-base-web {
+  display: none;
+  visibility: hidden;
+}
+
+/* Layout */
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapper-credits {
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.section-credits {
+  height: 216vw;
+}
+
+.section-footer {
+  height: 120vw;
+  display: grid;
+}
+
+/* !!!Navigation Bar */
+
+
+.nav-inactive {
+  transition: transform 0.5s ease-in;
+}
+
+.nav-active {
+  transform: translateX(100%) !important;
+  transition: transform 0.5s ease-in;
+}
+
+.burger {
+  position: fixed;
+  width: 9.5vw;
+  height: 7.5vw;
+  z-index: 50;
+  transform: translateX(88vw);
+  top: 2vw;
+}
+
+.burger div {
+  width: 7.5vw;
+  height: 1.1vw;
+  border-radius: 5px;
+  background-color: #000000;
+  opacity: 0.7;
+  margin: 1vw;
+}
+
+.logo-okk-nav {
+  position: absolute;
+  top: 12vw;
+  left: 16vw;
+}
+
+#logo-okk {
+  width: 20vw;
+}
+
+.close-nav-button {
+  border-radius: 7vw;
+  width: 25vw;
+  height: 8vw;
+  font-size: 4.3vw;
+  top: 90vw;
+  left: 14vw;
+  position: absolute;
+  background-color: #fff;
+  border: none;
+}
+
+.navbar-wrapper ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 35vw 26vw 35vw 0;
+  color: #fff;
+  float: right;
+  /* overflow: hidden; */
+}
+
+.navbar-wrapper ul li {
+  text-decoration: none;
+  margin-right: 5vw;
+  margin-top: 3vw;
+}
+
+.navbar-wrapper ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 5vw;
+}
+
+
+/* Text OKK */
+
+.title-okk {
+  color: #ffc380;
+  width: 60%;
+  position: relative;
+  top: 30vw;
+  left: 10vw;
+}
+
+.title-okk h3 {
+  font-size: 5vw;
+}
+
+.title-okk h1 {
+  font-size: 10vw;
+}
+
+/* ?Pohon Kelapa */
+.pohon-kelapa {
+  width: 100%;
+  position: absolute;
+  top: -20vw;
+  z-index: -1;
+}
+
+.pohon-kelapa img {
+  width: 45%;
+  position: relative;
+}
+
+.kelapa-kanan {
+  left: 18vw;
+}
+
+.kelapa-kiri {
+  right: 8vw;
+}
+
+/* Bagian Sponsor */
+
+.section-credits {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  
+}
+
+.text-sponsor {
+  width: 100%;
+  height: 15vw;
+}
+
+.sponsor-wrap {
+  margin-top: 45vw;
+}
+
+.text-sponsor h2 {
+  font-size: 8vw;
+  margin: 0 auto;
+}
+
+.company-logo {
+  margin-top: 10vw;
+  margin-bottom: -25vw;
+  width: 50%;
+}
+
+.contact-footer {
+  width: 100%;
+  display: flex;
+}
+
+.contact-footer-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 0 0 2vw;
+  color: white;
+}
+
+.contact-div {
+  width: 50%;
+  color: white;
+}
+
+.contact-div img {
+  float: left;
+}
+
+.contact-div h4 {
+  color: white;
+  padding-top: -0.2vw;
+  width: 40vw;
+}
+
+.contact-icon {
+  font-size: 10vw;
+  color: white;
+  float: left;
+}
+
+.contact-line {
+  width: 10vw;
+  height: 10vw;
+}
+
+.tagline-wrap {
+  float: right;
+  width: 90%;
+  /* border: blue 5px solid; */
+}
+
+.tagline-wrap div,
+.tagline-wrap hr {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*!!! Web Properties */
+
+.awan-kanan-web,
+.awan-float-web {
+  display: none;
+}
+
+
+@media only screen and (min-device-width: 1025px) {
+
+  body {
+    background-image: url("../image/desktop/bg-webkontak.png");
+    background-size: cover;
+  }
+    
+  .bg-base-mobile {
+    display: none;
+    visibility: hidden;
+  }
+
+  .bg-base-web {
+    display: unset;
+    visibility: visible;
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+  }
+
+  .section-credits {
+    height: 37vw;
+    
+  }
+
+  .section-footer {
+    height: 23vw;
+  }
+
+  /* !!!Navigation Bar */
+  .navbar-wrapper {
+    width: 100%;
+    background-color: none;
+    background: none;
+    transform: translateX(0%);
+    z-index: 100;
+  }
+
+  .logo-okk-nav {
+    position: absolute;
+    top: 2vw;
+    left: 10vw;
+  }
+
+  #logo-okk {
+    width: 6vw;
+  }
+
+  .close-nav-button {
+    display: none;
+    visibility: hidden;
+  }
+
+  .navbar-wrapper ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    color: #fff;
+    float: right;
+  }
+
+  .navbar-wrapper ul li {
+    text-decoration: none;
+    margin-right: 5vw;
+    margin-top: 3vw;
+  }
+
+  .navbar-wrapper ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2vw;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  /* Text OKK */
+
+  .title-okk {
+    width: 60%;
+    top: -1vw;
+    left: 10vw;
+  }
+
+  .title-okk h3 {
+    font-size: 3vw;
+    color: coral;
+    position: absolute;
+    left: 19.5vw;
+    top: -4.3vw;
+  }
+
+  .title-okk h1 {
+    font-size: 6vw;
+  }
+
+  .rumah {
+    width: 30vw;
+    padding-right: 3vw;
+  }
+
+  /* ?Pohon Kelapa */
+  .pohon-kelapa {
+    width: 100%;
+    position: relative;
+    bottom: 82vw;
+    top: -29vw;
+  }
+
+  .pohon-kelapa img {
+    width: 40%;
+    position: relative;
+    z-index: -1;
+  }
+
+  .kelapa-kanan {
+    left: 28vw;
+  }
+
+  .kelapa-kiri {
+    right: 8vw;
+  }
+
+
+  /* Bagian Sponsor */
+
+  .section-credits {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .text-sponsor {
+    width: 100%;
+    height: 15vw;
+    display: flex;
+    margin-top: 10vw;
+  }
+
+  .sponsor-wrap {
+    margin-top: 0;
+    width: 50%;
+    height: 20vw;
+    flex: 1;
+    flex-direction: row;
+  }
+
+  .sponsor-wrap-right {
+    border-right: #000 solid 1px;
+  }
+
+  .text-sponsor h2 {
+    font-size: 3.5vw;
+    margin: 0 auto 2vw auto;
+  }
+
+  .company-logo {
+    margin-top: 0vw;
+    margin-bottom: 10vw;
+    width: 20vw;
+  }
+
+  .contact-footer {
+    width: 100%;
+    display: flex;
+  }
+
+  .contact-footer-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 0 0 2vw;
+    color: white;
+  }
+
+  .contact-div {
+    width: 50%;
+    color: white;
+  }
+
+  .contact-div h3 {
+    font-size: 2vw;
+  }
+
+  .contact-div img {
+    float: left;
+  }
+
+  .contact-div h4 {
+    color: white;
+    font-size: 1.5vw;
+    padding-top: -0.2vw;
+  }
+
+  .contact-icon {
+    font-size: 2vw;
+    color: white;
+    float: left;
+  }
+
+  .contact-line {
+    width: 2vw;
+    height: 2vw;
+  }
+
+  .contact-person h4 {
+    font-size: 1.2vw;
+  }
+
+  .tagline-wrap {
+    float: right;
+    width: 90%;
+    /* border: blue 5px solid; */
+  }
+
+  .tagline-wrap div,
+  .tagline-wrap hr {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/* new css for this page */
+.wrapper-contact {
+    height: 480px;
+}
+
+.button-back {
+    border-radius: 120px;
+    width: 288px;
+    background-color: #6C353B;
+    border: none;
+}
+
+.font-back {
+    color: #faefdb;
+}
+
+.button-wrapper {
+    width: 324px;
+}
+
+@media only screen and (min-device-width: 1025px) {
+  .contact-content {
+    width: 50%;
+  }
+
+  .wave {
+    display: none;
+  }
+
+  .navbar-wrapper ul li a {
+    color: #000;
+  }
+
+  .wrapper1 {
+    background-color: rgb(0, 0, 0);
+    bottom: 0;
+  }
+  
+  .section-footer {
+    background-color: rgb(0, 0, 0);
+    bottom: 0;
+  }
+
+  .sekretariat {
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-device-width: 1025px) {
+
+  body {
+    background-image: url("../image/mobile/bg-mobilekontak.png");
+    background-size: cover;
+  }
+
+  .wrapper1 {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .section-footer {
+    background-color: rgb(0, 0, 0);
+  }
+
+  .navbar-wrapper {
+    width: 50%;
+    height: 100vh;
+    background-color: #a03c1e;
+    transform: translateX(200%);
+    z-index: 150;
+    position: fixed;
+  }
+
+  .contact-content {
+    width: 100%;
+  }
+
+  .section-credits {
+    background-color: #ffffff;
+  }
+
+  .wrapper-contact {
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}

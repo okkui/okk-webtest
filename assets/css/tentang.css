@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Economica&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Economica&display=swap');
 
 .loader-wrapper {
   width: 100%;
@@ -102,7 +102,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: 0;
-  font-family: "Economica", sans-serif;
+  font-family: 'Economica', sans-serif;
 }
 
 body {
@@ -122,6 +122,10 @@ body {
   background-color: #a03c1e;
   transform: translateX(200%);
   z-index: 150;
+}
+
+.navbar-wrapper ul li {
+  color: white;
 }
 
 .nav-inactive {

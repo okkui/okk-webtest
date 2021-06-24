@@ -1,0 +1,137 @@
+.section-footer {
+    height: 120vw;
+    display: grid;
+}
+
+
+.contact-footer {
+    width: 100%;
+    display: flex;
+}
+
+.contact-footer-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 0 0 2vw;
+    color: white;
+}
+
+.contact-div {
+    width: 50%;
+    color: white;
+}
+
+.contact-div img {
+    float: left;
+}
+
+.contact-div h4 {
+    color: white;
+    padding-top: -0.2vw;
+    width: 40vw;
+}
+
+.contact-icon {
+    font-size: 10vw;
+    color: white;
+    float: left;
+}
+
+.contact-line {
+    width: 10vw;
+    height: 10vw;
+}
+
+@media only screen and (min-device-width: 1025px) {
+    .wrapper1 {
+        background-color: rgb(0, 0, 0);
+        bottom: 0;
+    }
+    
+    .section-footer {
+        background-color: rgb(0, 0, 0);
+        bottom: 0;
+        height: 23vw;
+    }
+
+    .contact-content {
+        width: 50%;
+    }
+
+    
+    .contact-footer {
+        width: 100%;
+        display: flex;
+    }
+
+    .contact-div {
+        width: 50%;
+        color: white;
+    }
+    
+    .contact-div h3 {
+        font-size: 2vw;
+    }
+
+    .contact-div img {
+        float: left;
+    }
+
+    .contact-div h4 {
+        color: white;
+        font-size: 1.5vw;
+        padding-top: -0.2vw;
+    }
+
+    .contact-icon {
+        font-size: 2vw;
+        color: white;
+        float: left;
+    }
+
+    .contact-line {
+        width: 2vw;
+        height: 2vw;
+    }
+
+    .contact-person h4 {
+        font-size: 1.2vw;
+    }
+
+    .tagline-wrap {
+        float: right;
+        width: 90%;
+        /* border: blue 5px solid; */
+    }
+
+    .tagline-wrap div,
+    .tagline-wrap hr {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media only screen and (max-device-width: 1025px) {
+    .wrapper1 {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .section-footer {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .contact-content {
+        width: 100%;
+    }
+    
+    .section-credits {
+        background-color: #ffffff;
+    }
+    
+    .wrapper-contact {
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
