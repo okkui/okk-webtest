@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Economica&display=swap");
 
+=======
+>>>>>>> bd9e948fb975f52b5fe4ee88e6583c0b19543233
 .loader-wrapper {
   width: 100%;
   height: 100vh;
@@ -106,7 +109,11 @@
   background: #555;
 }
 
+<<<<<<< HEAD
 *, html, body {
+=======
+*, body {
+>>>>>>> bd9e948fb975f52b5fe4ee88e6583c0b19543233
   margin: 0;
   padding: 0;
   box-sizing: 0;
@@ -133,6 +140,7 @@
 
 /* Layout */
 
+<<<<<<< HEAD
 .burger {
   position: fixed;
   width: 9.5vw;
@@ -151,15 +159,30 @@
   margin: 1vw;
 }
 
+=======
+>>>>>>> bd9e948fb975f52b5fe4ee88e6583c0b19543233
 .wrapper {
   width: 100%;
   overflow: hidden;
 }
 
+<<<<<<< HEAD
+=======
+.section-landing {
+  height: 190vw;
+}
+
+>>>>>>> bd9e948fb975f52b5fe4ee88e6583c0b19543233
 .section-acara, .section-misi {
   height: 216vw;
 }
 
+<<<<<<< HEAD
+=======
+.section-kelompok {
+  height: 216.5vw;
+}
+>>>>>>> bd9e948fb975f52b5fe4ee88e6583c0b19543233
 
 .section-credits {
   height: 216vw;
@@ -170,6 +193,63 @@
   display: grid;
 }
 
+<<<<<<< HEAD
+=======
+/* ?Awan */
+
+.awan {
+  position: relative;
+  z-index: -1;
+}
+
+.awan-kiri, .awan-tengah, .awan-kanan {
+  width: 40%;
+  position: relative;
+}
+
+.awan-kiri {
+  top: 5vw;
+  right: 7vw;
+}
+
+.awan-tengah {
+  right: 17vw;
+  top: 47vw;
+}
+
+.awan-kanan {
+  float: right;
+  left: 15vw;
+  top: 8vw;
+}
+
+/* ? Wayang */
+
+.wayang {
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  height: 140vw;
+}
+
+.wayang-kiri, .wayang-kanan {
+  width: 40%;
+}
+
+.wayang-kiri {
+  position: relative;
+  top: 7vw;
+  left: 3vw;
+}
+
+.wayang-kanan {
+  position: relative;
+  float: right;
+  left: 10vw;
+  top: 9vw;
+}
+
+>>>>>>> bd9e948fb975f52b5fe4ee88e6583c0b19543233
 /* Text OKK */
 
 .title-okk {
@@ -218,6 +298,25 @@
   position: relative;
 }
 
+<<<<<<< HEAD
+=======
+.title-acara {
+  color: #ffc380;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.title-acara h1 {
+  font-size: 10vw;
+}
+
+.title-acara p {
+  font-size: 4.5vw;
+}
+
+/* !!!CAROUSEL */
+
+>>>>>>> bd9e948fb975f52b5fe4ee88e6583c0b19543233
 /* ?Title Misi */
 
 .wrap-content-misi {
@@ -243,7 +342,35 @@
   z-index: 5;
 }
 
+<<<<<<< HEAD
 /* ?Pohon Kelapa */
+=======
+/* ?Awan Misi */
+
+.awan-misi {
+  position: relative;
+  z-index: -1;
+  bottom: 20vw;
+}
+
+.awan-misi img {
+  width: 75%;
+  position: relative;
+}
+
+.awan-misikiri {
+  right: 30vw;
+}
+
+.awan-misikanan {
+  float: right;
+  left: 30vw;
+  bottom: 36vw;
+}
+
+/* ?Pohon Kelapa */
+
+>>>>>>> bd9e948fb975f52b5fe4ee88e6583c0b19543233
 .pohon-kelapa {
   width: 100%;
   position: relative;
@@ -263,6 +390,41 @@
   right: 8vw;
 }
 
+<<<<<<< HEAD
+=======
+/* !Kelompok */
+
+.title-kelompok {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  color: #fff;
+  margin-top: 40vw;
+}
+
+.title-kelompok h1 {
+  font-size: 10vw;
+}
+
+.title-kelompok p {
+  color: #cbecf7;
+  font-size: 4.5vw;
+}
+
+.cta-kelompok {
+  width: 30%;
+  height: 9vw;
+  border-radius: 7vw;
+  background-color: #fff;
+  border: none;
+  font-size: 4.3vw;
+}
+
+.cta-kelompok:hover {
+  opacity: 80%;
+}
+
+>>>>>>> bd9e948fb975f52b5fe4ee88e6583c0b19543233
 /* Bagian Sponsor */
 
 .section-credits {
@@ -290,8 +452,85 @@
   margin-bottom: -25vw;
   width: 50%;
 }
+<<<<<<< HEAD
 /* Web Properties */
 
+=======
+
+/* .contact-footer {
+  width: 100%;
+  height: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-footer-content {
+  width: 100%;
+  height: 50vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2vw 0 0 2vw;
+  color: white;
+  border: salmon solid 10px;
+}
+
+.contact-person {
+  grid-template-columns: 33% 33%;
+  grid-template-rows: 10%;
+  border: yellow solid 2px;
+}
+
+.contact-div {
+  width: 50%;
+  color: white;
+  border: red solid 2px;
+  display: flex;
+}
+
+.contact-div img {
+  float: left;
+}
+
+.contact-div h4 {
+  color: white;
+  padding-top: -0.2vw;
+}
+
+.contact-icon {
+  font-size: 8vw;
+  color: white;
+  float: left;
+}
+
+.contact-line {
+  width: 8vw;
+  height: 8vw;
+}
+
+.tagline-wrap {
+  float: left;
+  width: 90%;
+  border: blue 5px solid;
+}
+
+.tagline-wrap div,
+.tagline-wrap hr {
+  display: flex;
+} */
+
+/* Web Properties */
+
+.awan-kanan-web, .awan-float-web {
+  display: none;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .wayang-kanan {
+    left: 15vw;
+  }
+}
+
+>>>>>>> bd9e948fb975f52b5fe4ee88e6583c0b19543233
 @media only screen and (min-device-width: 1224px) {
   .bg-base-mobile {
     display: none;
@@ -310,11 +549,107 @@
 }
 
 @media only screen and (min-device-width: 1224px) {
+<<<<<<< HEAD
+=======
+  .section-landing {
+    height: 60vw;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .section-acara {
+    height: 42.1vw;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .section-misi {
+    height: 62vw;
+    z-index: -1;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .section-kelompok {
+    height: 70vw;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+>>>>>>> bd9e948fb975f52b5fe4ee88e6583c0b19543233
   .section-credits {
     height: 37vw;
   }
 }
 
+<<<<<<< HEAD
+=======
+@media only screen and (min-device-width: 1224px) {
+  .section-footer {
+    height: 23vw;
+  }
+}
+
+/* ?Awan */
+
+@media only screen and (min-device-width: 1224px) {
+  .awan-kiri, .awan-tengah, .awan-kanan {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .awan-kiri {
+    top: 2vw;
+    right: 7vw;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .awan-tengah {
+    left: 6vw;
+    top: 7vw;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .awan-kanan {
+    left: 5vw;
+    top: 2vw;
+  }
+}
+
+/* ? Wayang */
+
+@media only screen and (min-device-width: 1224px) {
+  .wayang {
+    width: 100vw;
+    height: 100vw;
+    bottom: 12vw;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .wayang-kiri, .wayang-kanan {
+    width: 20%;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .wayang-kiri {
+    top: 0;
+    left: 10vw;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .wayang-kanan {
+    left: -7vw;
+    top: 15vw;
+  }
+}
+
+>>>>>>> bd9e948fb975f52b5fe4ee88e6583c0b19543233
 /* Text OKK */
 
 @media only screen and (min-device-width: 1224px) {
@@ -391,6 +726,28 @@
   }
 }
 
+<<<<<<< HEAD
+=======
+@media only screen and (min-device-width: 1224px) {
+  .awan-kanan-web {
+    display: block;
+    width: 35%;
+    left: 80vw;
+    position: absolute;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .awan-float-web {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 30vw;
+    bottom: -18vw;
+  }
+}
+
+>>>>>>> bd9e948fb975f52b5fe4ee88e6583c0b19543233
 /* ?Title Misi */
 
 @media only screen and (min-device-width: 1224px) {
@@ -442,6 +799,7 @@
   }
 }
 
+<<<<<<< HEAD
 @media only screen and (min-device-width: 1024px) {
 
   body {
@@ -449,6 +807,48 @@
     background-size: cover;
   }
 
+=======
+/* !Kelompok */
+
+@media only screen and (min-device-width: 1224px) {
+  .title-kelompok {
+    margin-top: 20vw;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .title-kelompok h1 {
+    font-size: 8vw;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .title-kelompok p {
+    font-size: 3.5vw;
+  }
+}
+
+/* Bagian Sponsor */
+
+@media only screen and (min-device-width: 1224px) {
+  .section-credits {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .text-sponsor {
+    width: 100%;
+    height: 15vw;
+    display: flex;
+    margin-top: 10vw;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+>>>>>>> bd9e948fb975f52b5fe4ee88e6583c0b19543233
   .sponsor-wrap {
     margin-top: 0;
     width: 50%;
@@ -456,21 +856,40 @@
     flex: 1;
     flex-direction: row;
   }
+<<<<<<< HEAD
 
   .sponsor-wrap-right {
     border-right: #000 solid 1px;
   }
 
+=======
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .sponsor-wrap-right {
+    border-right: #000 solid 1px;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+>>>>>>> bd9e948fb975f52b5fe4ee88e6583c0b19543233
   .text-sponsor h2 {
     font-size: 3.5vw;
     margin: 0 auto 2vw auto;
   }
+<<<<<<< HEAD
 
+=======
+}
+
+@media only screen and (min-device-width: 1224px) {
+>>>>>>> bd9e948fb975f52b5fe4ee88e6583c0b19543233
   .company-logo {
     margin-top: 0vw;
     margin-bottom: 10vw;
     width: 20vw;
   }
+<<<<<<< HEAD
 
   .tagline-wrap {
     float: right;
@@ -537,3 +956,109 @@
     align-items: center;
   }
 }
+=======
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .contact-footer {
+    width: 100%;
+    height: 50vw;
+    display: flex;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .contact-footer-content {
+    width: 100%;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 0 0 2vw;
+    color: white;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .contact-div {
+    width: 50%;
+    color: white;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .contact-div img {
+    float: left;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .contact-div h4 {
+    color: white;
+    padding-top: -0.2vw;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .contact-icon {
+    font-size: 2vw;
+    color: white;
+    float: left;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .contact-line {
+    width: 2vw;
+    height: 2vw;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .tagline-wrap {
+    float: right;
+    width: 90%;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+  .tagline-wrap div, .tagline-wrap hr {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/* .section-credits {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: unset;
+    justify-content: center;
+  }
+
+  .text-sponsor {
+    width: 50%;
+    height: fit-content;
+  }
+
+  .text-sponsor h2 {
+    font-size: 3vw;
+    align-items: center;
+    text-align: center;
+    margin: 10vw 0 2vw 0;
+  }
+
+  .company-logo {
+    width: 40%;
+    margin: 0 14vw;
+  } */
+
+/* .hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+} */
+
+>>>>>>> bd9e948fb975f52b5fe4ee88e6583c0b19543233

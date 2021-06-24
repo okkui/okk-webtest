@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Economica&display=swap");
 
 .loader-wrapper {
@@ -579,3 +580,582 @@ body {
     background: white;
   }
 }
+=======
+@import url("https://fonts.googleapis.com/css2?family=Economica&display=swap");
+
+.loader-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+.disappear {
+  animation: vanish 1s forwards;
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* Scrollbar for Chrome User */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(19, 19, 19);
+  opacity: 10%;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Economica", sans-serif;
+}
+
+body {
+  background: #110116;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+/* !Navbar */
+.navbar-wrapper {
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  background-color: #a03c1e;
+  transform: translateX(200%);
+  z-index: 150;
+}
+
+.nav-inactive {
+  transition: transform 0.5s ease-in;
+}
+
+.nav-active {
+  transform: translateX(100%) !important;
+  transition: transform 0.5s ease-in;
+}
+
+.burger {
+  position: fixed;
+  width: 9.5vw;
+  height: 7.5vw;
+  z-index: 50;
+  transform: translateX(88vw);
+  top: 2vw;
+}
+
+.burger div {
+  width: 7.5vw;
+  height: 1.1vw;
+  border-radius: 5px;
+  background-color: #ffffff;
+  opacity: 0.7;
+  margin: 1vw;
+}
+
+.logo-okk-nav {
+  position: absolute;
+  top: 12vw;
+  left: 16vw;
+}
+
+#logo-okk {
+  width: 20vw;
+}
+
+.close-nav-button {
+  border-radius: 7vw;
+  width: 25vw;
+  height: 8vw;
+  font-size: 4.3vw;
+  top: 90vw;
+  left: 14vw;
+  position: absolute;
+  background-color: #fff;
+  border: none;
+}
+
+.navbar-wrapper ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 35vw 26vw 35vw 0;
+  color: #fff;
+  float: right;
+  /* overflow: hidden; */
+}
+
+.navbar-wrapper ul li {
+  text-decoration: none;
+  margin-right: 5vw;
+  margin-top: 3vw;
+}
+
+.navbar-wrapper ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 5vw;
+}
+
+/**! Backgrounds */
+
+.bg-base-web {
+  display: none;
+}
+
+.bg-base-mobile {
+  width: 102vw;
+  position: relative;
+  right: 1vw;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.content-tentang {
+  width: 100vw;
+  height: 150vw;
+  background: #faefdb;
+  position: absolute;
+  top: 30vw;
+  z-index: -1;
+}
+
+.text-wrapper {
+  position: absolute;
+  z-index: 10 !important;
+  left: 5vw;
+  top: 27vw;
+  width: 80vw;
+  line-height: 4.5vw;
+}
+
+.text-wrapper h2 {
+  font-size: 5vw;
+}
+
+.text-wrapper h1 {
+  font-weight: bold;
+  font-size: 6vw;
+}
+
+.text-wrapper p {
+  font-size: 4.5vw;
+}
+
+.cta-kembali {
+  width: 45vw;
+  height: 8vw;
+  position: relative;
+  bottom: 105vw;
+  left: 5vw;
+  background-color: #351515;
+  color: #faefdb;
+  border: none;
+  border-radius: 7vw;
+  font-size: 4vw;
+  z-index: 4;
+}
+
+.section-sponsor {
+  width: 100vw;
+  height: 180vw;
+  position: relative;
+  bottom: 10vw;
+  background: white;
+}
+
+.wave {
+  width: 100vw;
+  position: relative;
+  bottom: 27vw;
+}
+
+.sponsor-wrapper {
+  width: 80vw;
+  height: 150vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.sponsor {
+  width: 80vw;
+  height: 70vw;
+  text-align: center;
+}
+
+.sponsor h5 {
+  margin-bottom: 7vw;
+  font-size: 7vw;
+}
+
+.sponsor-img {
+  width: 60vw;
+}
+
+.footer {
+  width: 100vw;
+  height: 120vw;
+  display: flex;
+  background: #000;
+  color: #fff;
+}
+
+.contact-container {
+  width: 50vw;
+  height: 120vw;
+}
+
+.contact-container-left {
+  padding-left: 3vw;
+  padding-top: 2vw;
+}
+
+.contact-container-left h3 {
+  font-size: 5vw;
+}
+
+.contact-row-left {
+  display: flex;
+}
+
+.contact-row-left h4 {
+  font-size: 5vw;
+  margin-top: 2vw;
+}
+
+.contact-row-left i {
+  font-size: 10vw;
+}
+
+.contact-line {
+  width: 10vw;
+}
+
+.contact-container-right {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2vw;
+  padding-top: 2vw;
+  text-align: right;
+}
+
+.contact-row-right h4 {
+  font-size: 5vw;
+}
+
+.hr {
+  width: 30vw;
+  margin: 3vw 0 3vw 7vw;
+  height: 2vw;
+  background: white;
+}
+
+/*!!!DESKTOP  */
+@media only screen and (min-device-width: 1025px) {
+  .bg-base-mobile {
+    display: none;
+    visibility: hidden;
+  }
+
+  .bg-base-web {
+    display: unset;
+    visibility: visible;
+    width: 102vw;
+    position: relative;
+    right: 1vw;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* !!!Navigation Bar */
+  .navbar-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 20vw;
+    background-color: none;
+    background: none;
+    transform: translateX(0%);
+    z-index: 100;
+  }
+
+  .logo-okk-nav {
+    position: absolute;
+    top: 2vw;
+    left: 10vw;
+  }
+
+  #logo-okk {
+    width: 6vw;
+  }
+
+  .close-nav-button {
+    display: none;
+    visibility: hidden;
+  }
+
+  .navbar-wrapper ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    color: #fff;
+    float: right;
+  }
+
+  .navbar-wrapper ul li {
+    text-decoration: none;
+    margin-right: 5vw;
+    margin-top: 3vw;
+  }
+
+  .navbar-wrapper ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2vw;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  /* !Contents */
+
+  .content-tentang {
+    width: 100vw;
+    height: 45vw;
+    background: #faefdb;
+    position: absolute;
+    top: 0vw;
+    /* bottom: 10vw; */
+    z-index: -1;
+  }
+
+  .text-wrapper {
+    position: absolute;
+    z-index: 10 !important;
+    left: 5vw;
+    top: 8vw;
+    width: 45vw;
+    line-height: 2vw;
+  }
+
+  .text-wrapper h2 {
+    font-size: 2.5vw;
+  }
+
+  .text-wrapper h1 {
+    font-weight: bold;
+    font-size: 3vw;
+  }
+
+  .text-wrapper p {
+    font-size: 2vw;
+  }
+
+  .cta-kembali {
+    width: 25vw;
+    height: 5vw;
+    position: relative;
+    bottom: 27vw;
+    left: 5vw;
+    background-color: #351515;
+    color: #faefdb;
+    border: none;
+    border-radius: 7vw;
+    font-size: 2vw;
+    z-index: 4;
+  }
+
+  .section-sponsor {
+    width: 100vw;
+    height: 30vw;
+    position: relative;
+    bottom: 7vw;
+    background: white;
+  }
+
+  .wave {
+    width: 100vw;
+    position: absolute;
+    bottom: 29vw;
+  }
+
+  .sponsor-wrapper {
+    width: 100vw;
+    height: 40vw;
+    display: flex;
+    flex-wrap: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .sponsor {
+    width: 50vw;
+    height: 25vw;
+    text-align: center;
+    flex: 1;
+    margin-bottom: 7vw;
+  }
+
+  #sponsor-kiri {
+    border-right: #000 solid 1px;
+  }
+
+  .sponsor h5 {
+    margin-bottom: 2vw;
+    font-size: 4vw;
+  }
+
+  .sponsor-img {
+    width: 20vw;
+  }
+
+  .footer {
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    background: #000;
+    color: #fff;
+  }
+
+  .contact-container {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .contact-container-left {
+    padding-left: 3vw;
+    padding-right: 10vw;
+    padding-top: 2vw;
+  }
+
+  .contact-container-left h3 {
+    font-size: 3vw;
+  }
+
+  .contact-row-left {
+    display: flex;
+  }
+
+  .contact-row-left h4 {
+    font-size: 2vw;
+    margin-top: 2vw;
+  }
+
+  .contact-row-left i {
+    font-size: 6vw;
+  }
+
+  .contact-line {
+    width: 6vw;
+  }
+
+  .contact-container-right {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2vw;
+    padding-top: 2vw;
+    text-align: right;
+  }
+
+  .contact-row-right h4 {
+    font-size: 2vw;
+  }
+
+  .hr {
+    width: 30vw;
+    margin: 3vw 0 3vw 7vw;
+    height: 0.5vw;
+    background: white;
+  }
+}
+>>>>>>> bd9e948fb975f52b5fe4ee88e6583c0b19543233
