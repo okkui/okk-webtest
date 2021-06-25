@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OKK UI 2021</title>
+    <title>Document</title>
 
     <!-- !!!Links -->
     <link rel="stylesheet" href="assets/css/home.css" />
@@ -36,7 +36,7 @@
         </div>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="assets/html/misi.html">Misi</a></li>
+          <li><a href="assets/html/misi1.html">Misi</a></li>
           <li><a href="assets/html/kelompok.html">Kelompok</a></li>
           <li><a href="assets/html/tentang.html">Tentang</a></li>
           <li><a href="assets/html/kontak.html">Kontak</a></li>
@@ -54,12 +54,12 @@
         <img
           id="image-web1"
           class="bg-base-web hidden"
-          src="assets/image/desktop/bg-weblanding1.png"
+          src="assets/image/desktop/bg-weblanding1.svg"
         />
         <!-- Mobile Landing Background -->
         <img
           class="bg-base-mobile"
-          src="assets/image/mobile/bg-mobilelanding1.png"
+          src="assets/image/mobile/bg-mobilelanding1.svg"
         />
         <div class="awan">
           <img class="awan-kiri" src="assets/image/ornament/awan-kiri.png" />
@@ -96,7 +96,7 @@
         <img
           id="image-web2"
           class="bg-base-web"
-          src="assets/image/desktop/bg-weblanding2.png"
+          src="assets/image/desktop/bg-weblanding2.svg"
         />
         <img
           class="bg-base-mobile"
@@ -126,8 +126,8 @@
                       src="assets/image/ornament/rumah-tongkonan.png"
                       alt=""
                     />
-                    <h5>PKKMB</h5>
-                    <p>14-15 Juli</p>
+                    <h5 id="acara1">Welcoming Mahasiswa Baru OKK UI 2021</h5>
+                    <p>5-7 Juli</p>
                   </div>
                   <div class="swiper-slide swiper-slide-acara">
                     <img
@@ -135,8 +135,8 @@
                       src="assets/image/ornament/rumah-gadang.png"
                       alt=""
                     />
-                    <h5>Hari Puncak OKK UI 2021</h5>
-                    <p>14-15 Juli</p>
+                    <h5>Mentoring #1</h5>
+                    <p>13-15 Juli</p>
                   </div>
                   <div class="swiper-slide swiper-slide-acara">
                     <img
@@ -145,8 +145,8 @@
                       src="assets/image/ornament/rumah-bali.png"
                       alt=""
                     />
-                    <h5>UI Welcomes U! Part 1</h5>
-                    <p>14-15 Juli</p>
+                    <h5>Mentoring #2</h5>
+                    <p>17-19 Juli</p>
                   </div>
                   <div class="swiper-slide swiper-slide-acara">
                     <img
@@ -155,8 +155,8 @@
                       src="assets/image/ornament/rumah-joglo.png"
                       alt=""
                     />
-                    <h5>UI Welcomes U! Part 2</h5>
-                    <p>14-15 Juli</p>
+                    <h5>Mentoring #3</h5>
+                    <p>26-29 Juli</p>
                   </div>
                   <div class="swiper-slide swiper-slide-acara">
                     <img
@@ -165,8 +165,8 @@
                       src="assets/image/ornament/rumah-honai.png"
                       alt=""
                     />
-                    <h5>Mentoring #1</h5>
-                    <p>14-15 Juli</p>
+                    <h5>PKKMB UI</h5>
+                    <p>26-29 Juli</p>
                   </div>
                   <div class="swiper-slide swiper-slide-acara">
                     <img
@@ -175,8 +175,8 @@
                       src="assets/image/ornament/rumah-limas.png"
                       alt=""
                     />
-                    <h5>Mentoring #2</h5>
-                    <p>14-15 Juli</p>
+                    <h5 id="acara6">Acara Puncak OKK UI 2021</h5>
+                    <p>30-31 Juli</p>
                   </div>
                 </div>
                 <!-- Add Pagination -->
@@ -192,7 +192,7 @@
         <img
           id="image-web3"
           class="bg-base-web"
-          src="assets/image/desktop/bg-weblanding3.png"
+          src="assets/image/desktop/bg-weblanding3.svg"
         />
         <img
           class="bg-base-mobile"
@@ -310,7 +310,7 @@
         <img
           id="image-web4"
           class="bg-base-web"
-          src="assets/image/desktop/bg-weblanding4.png"
+          src="assets/image/desktop/bg-weblanding4.svg"
         />
         <img
           class="bg-base-mobile"
@@ -332,7 +332,7 @@
         <img
           id="image-web5"
           class="bg-base-web"
-          src="assets/image/desktop/bg-weblanding5.png"
+          src="assets/image/desktop/bg-weblanding5.svg"
         />
         <img
           class="bg-base-mobile"
@@ -437,44 +437,44 @@
 
     <!-- ?Loading Screen Script -->
     <script>
-      var noScroll = document.querySelector('body');
-      var loader = document.querySelector('.loader-wrapper');
+      var noScroll = document.querySelector("body");
+      var loader = document.querySelector(".loader-wrapper");
 
-      window.addEventListener('load', vanish);
+      window.addEventListener("load", vanish);
 
       function vanish() {
-        loader.classList.add('disappear');
-        noScroll.classList.remove('noscroll');
+        loader.classList.add("disappear");
+        noScroll.classList.remove("noscroll");
       }
     </script>
 
     <!-- ?Animation Script animejs -->
     <script>
       anime({
-        targets: '.awan',
+        targets: ".awan",
         translateX: 150,
-        direction: 'alternate',
+        direction: "alternate",
         loop: true,
-        easing: 'easeInOutSine',
+        easing: "easeInOutSine",
         duration: 10000,
       });
     </script>
 
     <!-- ?Swiper Script swiperjs-->
     <script>
-      var swiper = new Swiper('.swiper-container-acara', {
+      var swiper = new Swiper(".swiper-container-acara", {
         slidesPerView: 2.5,
         spaceBetween: 20,
         pagination: {
-          el: '.swiper-pagination',
+          el: ".swiper-pagination",
           clickable: true,
         },
       });
 
-      var swiperMisi = new Swiper('.swiper-container-misi', {
+      var swiperMisi = new Swiper(".swiper-container-misi", {
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>
@@ -482,15 +482,15 @@
     <!-- ?Hamburger Navbar -->
     <script>
       function openMenu() {
-        const burgerClick = document.getElementById('navbar-wrapper');
-        burgerClick.classList.remove('nav-inactive');
-        burgerClick.classList.add('nav-active');
+        const burgerClick = document.getElementById("navbar-wrapper");
+        burgerClick.classList.remove("nav-inactive");
+        burgerClick.classList.add("nav-active");
       }
 
       function closeMenu() {
-        const tutupClick = document.getElementById('navbar-wrapper');
-        tutupClick.classList.remove('nav-active');
-        tutupClick.classList.add('nav-inactive');
+        const tutupClick = document.getElementById("navbar-wrapper");
+        tutupClick.classList.remove("nav-active");
+        tutupClick.classList.add("nav-inactive");
       }
     </script>
   </body>
