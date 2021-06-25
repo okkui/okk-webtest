@@ -102,11 +102,14 @@ const Kelompok = () => {
   const [showOverlay, setShowOverlay] = React.useState(false);
 
   return (
-    <div id="desktop">
-      <img class="bg-base-mobile" src="../image/mobile/bg-kelompok.svg"></img>
+    <>
+      <img
+        className="bg-base-mobile"
+        src="../image/mobile/bg-kelompok.svg"
+      ></img>
       <Hamburger setShowOverlay={setShowOverlay} />
       <div className={`overlay ${showOverlay ? 'show-overlay' : ''}`}>
-        <div>
+        <div className="logo-wrapper">
           <img
             src="../image/ornament/logo-okk.png"
             alt="okk ui 2021"
@@ -115,6 +118,9 @@ const Kelompok = () => {
         </div>
         <div>
           <ul>
+            <li>
+              <a href="../../index.html">Home</a>
+            </li>
             <li>
               <a href="../html/misi.html">Misi</a>
             </li>
@@ -130,7 +136,7 @@ const Kelompok = () => {
           </ul>
         </div>
         <button className="close-btn" onClick={() => setShowOverlay(false)}>
-          Tutup
+          TUTUP
         </button>
       </div>
       {/* <BgKelompokPhone /> */}
@@ -202,23 +208,60 @@ const Kelompok = () => {
             </div>
           </div>
         </div>
-        {/* <footer>
-          <ul>
-            <li>
-              <a href="../html/misi.html">Misi</a>
-            </li>
-            <li>
-              <a href="../html/kelompok.html">Kelompok</a>
-            </li>
-            <li>
-              <a href="../html/tentang.html">Tentang</a>
-            </li>
-            <li>
-              <a href="../html/kontak.html">Kontak</a>
-            </li>
-          </ul>
-        </footer> */}
       </div>
-    </div>
+
+      <footer className="wrapper1 section-footer">
+        <div className="contact-footer">
+          <div className="contact-footer-content">
+            <div className="contact-div">
+              <h3>Linimasa:</h3>
+            </div>
+            <div className="contact-div">
+              <img
+                className="contact-icon contact-line"
+                src="https://img.icons8.com/windows/500/ffffff/line-me.png"
+              />
+              <h4>@okkui</h4>
+            </div>
+            <div className="contact-div">
+              <i className="contact-icon bx bxl-instagram"></i>
+              <h4>@okk_ui</h4>
+            </div>
+            <div className="contact-div">
+              <i className="contact-icon bx bxl-twitter"></i>
+              <h4>@OKK_UI</h4>
+            </div>
+            <div className="contact-div">
+              <i className="contact-icon bx bxl-facebook-square"></i>
+              <h4>OKK UI</h4>
+            </div>
+            <div className="contact-person">
+              <h4>Rayyan | (085711383842)</h4>
+              <h4>Aurel | (085776962014)</h4>
+              <h4>Baihaqi | (082115790702)</h4>
+              <hr />
+            </div>
+          </div>
+          <div className="contact-footer-content"></div>
+          <div className="contact-footer-content">
+            <div className="tagline-wrap">
+              <div>
+                <h4>#OKKUI2021</h4>
+              </div>
+              <div>
+                <h4>#RagamGelora</h4>
+              </div>
+              <hr className="hr-styled" />
+              <div>
+                <h4>OKK UI 2021</h4>
+              </div>
+              <div>
+                <h4>Bersama Merajut Cita</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </>
   );
 };

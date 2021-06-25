@@ -11,7 +11,8 @@ a {
   color: inherit !important;
 }
 
-div#root {
+div#root,
+footer {
   font-family: 'Economica', sans-serif;
 }
 
@@ -21,7 +22,7 @@ div.kelompok {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  height: 130vh;
+  height: 140vh;
 }
 
 div.kelompok nav {
@@ -45,8 +46,13 @@ div.kelompok nav ul li {
   cursor: pointer;
 }
 
+.hr-styled {
+  border: 1vw solid white;
+  width: 100%;
+}
+
 li.menu {
-  padding: 0 40px;
+  padding: 0 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,6 +72,7 @@ li.menu {
   font-size: 4.3vw;
   background-color: #fff;
   border: none;
+  margin-top: 5vw;
 }
 
 div.kelompok-container {
@@ -250,6 +257,10 @@ div.sponsor {
   display: none;
 }
 
+.logo-wrapper {
+  margin-top: 50px;
+}
+
 .overlay {
   display: none;
   color: white;
@@ -259,17 +270,18 @@ div.sponsor {
 }
 
 .logo-overlay {
-  width: 60px;
-  height: 60px;
+  width: 20vw;
+  /* height: 100px; */
 }
 
 .overlay div ul {
   margin-top: 40px;
-  margin-left: -80px;
+  margin-left: -25vw;
 }
 
 .overlay div ul li {
-  margin-bottom: 20px;
+  margin-top: 6vw;
+  font-size: 5vw;
 }
 
 @media only screen and (max-width: 1140px) {
@@ -317,7 +329,7 @@ div.sponsor {
   }
 
   .show-overlay {
-    width: 200px;
+    width: 50vw;
     transition: all 0.5s ease-in;
   }
 
