@@ -71,8 +71,8 @@ const MentorBox = ({ namaMentor, gender = 'pria' }) => (
       <img
         src={
           gender === 'pria'
-            ? '../image/ornament/mentor2.svg'
-            : '../image/ornament/mentor1.svg'
+            ? './assets/image/ornament/mentor2.svg'
+            : './assets/image/ornament/mentor1.svg'
         }
       />
     </div>
@@ -105,13 +105,13 @@ const Kelompok = () => {
     <>
       <img
         className="bg-base-mobile"
-        src="../image/mobile/bg-kelompok.svg"
+        src="./assets/image/mobile/bg-kelompok.svg"
       ></img>
       <Hamburger setShowOverlay={setShowOverlay} />
       <div className={`overlay ${showOverlay ? 'show-overlay' : ''}`}>
         <div className="logo-wrapper">
           <img
-            src="../image/ornament/logo-okk.png"
+            src="./assets/image/ornament/logo-okk.png"
             alt="okk ui 2021"
             className="logo-overlay"
           />
@@ -119,19 +119,19 @@ const Kelompok = () => {
         <div>
           <ul>
             <li>
-              <a href="../../index.html">Home</a>
+              <a href="index.html">Home</a>
             </li>
             <li>
-              <a href="../html/misi.html">Misi</a>
+              <a href="misi.html">Misi</a>
             </li>
             <li>
-              <a href="../html/kelompok.html">Kelompok</a>
+              <a href="kelompok.html">Kelompok</a>
             </li>
             <li>
-              <a href="../html/tentang.html">Tentang</a>
+              <a href="tentang.html">Tentang</a>
             </li>
             <li>
-              <a href="../html/kontak.html">Kontak</a>
+              <a href="kontak.html">Kontak</a>
             </li>
           </ul>
         </div>
@@ -145,19 +145,19 @@ const Kelompok = () => {
           <nav>
             <ul>
               <li className="menu menu-border-right">
-                <a href="../../index.html">Home</a>
+                <a href="index.html">Home</a>
               </li>
               <li className="menu menu-border-right">
-                <a href="../html/misi.html">Misi</a>
+                <a href="misi.html">Misi</a>
               </li>
               <li className="menu menu-border-right">
-                <a href="../html/kelompok.html">Kelompok</a>
+                <a href="kelompok.html">Kelompok</a>
               </li>
               <li className="menu menu-border-right">
-                <a href="../html/tentang.html">Tentang</a>
+                <a href="tentang.html">Tentang</a>
               </li>
               <li className="menu">
-                <a href="../html/kontak.html">Kontak</a>
+                <a href="kontak.html">Kontak</a>
               </li>
             </ul>
           </nav>
@@ -178,7 +178,7 @@ const Kelompok = () => {
               </div>
               <div className="back">
                 <p>
-                  <a href="../../index.html">&#60; Kembali ke Halaman Utama</a>
+                  <a href="index.html">&#60; Kembali ke Halaman Utama</a>
                 </p>
               </div>
             </div>
@@ -196,7 +196,7 @@ const Kelompok = () => {
         <div className="sponsor-media-bg"></div>
         <div className="sponsor-media">
           <img
-            src="../image/ornament/gelombang.svg"
+            src="./assets/image/ornament/gelombang.svg"
             className="gelombang ada-mentor"
           />
           <div className="sponsor-media-wrapper">
