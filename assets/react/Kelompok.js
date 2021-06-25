@@ -106,7 +106,7 @@ const Kelompok = () => {
       <img class="bg-base-mobile" src="../image/mobile/bg-kelompok.svg"></img>
       <Hamburger setShowOverlay={setShowOverlay} />
       <div className={`overlay ${showOverlay ? 'show-overlay' : ''}`}>
-        <div>
+        <div className="logo-wrapper">
           <img
             src="../image/ornament/logo-okk.png"
             alt="okk ui 2021"
@@ -115,6 +115,9 @@ const Kelompok = () => {
         </div>
         <div>
           <ul>
+            <li>
+              <a href="../../index.html">Home</a>
+            </li>
             <li>
               <a href="../html/misi.html">Misi</a>
             </li>
@@ -130,7 +133,7 @@ const Kelompok = () => {
           </ul>
         </div>
         <button className="close-btn" onClick={() => setShowOverlay(false)}>
-          Tutup
+          TUTUP
         </button>
       </div>
       {/* <BgKelompokPhone /> */}
