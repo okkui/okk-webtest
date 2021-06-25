@@ -22,7 +22,7 @@ div.kelompok {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  height: 130vh;
+  height: 140vh;
 }
 
 div.kelompok nav {
@@ -52,7 +52,7 @@ div.kelompok nav ul li {
 }
 
 li.menu {
-  padding: 0 40px;
+  padding: 0 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -270,13 +270,13 @@ div.sponsor {
 }
 
 .logo-overlay {
-  width: 100px;
-  height: 100px;
+  width: 20vw;
+  /* height: 100px; */
 }
 
 .overlay div ul {
   margin-top: 40px;
-  margin-left: -140px;
+  margin-left: -25vw;
 }
 
 .overlay div ul li {

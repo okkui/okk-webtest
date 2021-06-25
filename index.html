@@ -23,6 +23,11 @@
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="icon"
+      href="assets/image/ornament/logo-okk.png"
+      type="image/x-icon"
+    />
   </head>
 
   <body class="noscroll">
@@ -59,7 +64,7 @@
         <!-- Mobile Landing Background -->
         <img
           class="bg-base-mobile"
-          src="assets/image/mobile/bg-mobilelanding1.svg"
+          src="assets/image/mobile/bg-mobilelanding1.png"
         />
         <div class="awan">
           <img class="awan-kiri" src="assets/image/ornament/awan-kiri.png" />
@@ -433,30 +438,30 @@
     <!-- ?Animation Script animejs -->
     <script>
       anime({
-        targets: ".awan",
+        targets: '.awan',
         translateX: 150,
-        direction: "alternate",
+        direction: 'alternate',
         loop: true,
-        easing: "easeInOutSine",
+        easing: 'easeInOutSine',
         duration: 10000,
       });
     </script>
 
     <!-- ?Swiper Script swiperjs-->
     <script>
-      var swiper = new Swiper(".swiper-container-acara", {
+      var swiper = new Swiper('.swiper-container-acara', {
         slidesPerView: 2.5,
         spaceBetween: 20,
         pagination: {
-          el: ".swiper-pagination",
+          el: '.swiper-pagination',
           clickable: true,
         },
       });
 
-      var swiperMisi = new Swiper(".swiper-container-misi", {
+      var swiperMisi = new Swiper('.swiper-container-misi', {
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
       });
     </script>
@@ -464,15 +469,15 @@
     <!-- ?Hamburger Navbar -->
     <script>
       function openMenu() {
-        const burgerClick = document.getElementById("navbar-wrapper");
-        burgerClick.classList.remove("nav-inactive");
-        burgerClick.classList.add("nav-active");
+        const burgerClick = document.getElementById('navbar-wrapper');
+        burgerClick.classList.remove('nav-inactive');
+        burgerClick.classList.add('nav-active');
       }
 
       function closeMenu() {
-        const tutupClick = document.getElementById("navbar-wrapper");
-        tutupClick.classList.remove("nav-active");
-        tutupClick.classList.add("nav-inactive");
+        const tutupClick = document.getElementById('navbar-wrapper');
+        tutupClick.classList.remove('nav-active');
+        tutupClick.classList.add('nav-inactive');
       }
     </script>
   </body>
