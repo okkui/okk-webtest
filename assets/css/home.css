@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Economica&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Economica&display=swap");
 
 .loader-wrapper {
   width: 100%;
@@ -107,7 +107,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: 0;
-  font-family: 'Economica', sans-serif;
+  font-family: "Economica", sans-serif;
 }
 
 body {
@@ -421,6 +421,15 @@ body {
   height: 20.5vw;
 }
 
+#acara1 {
+  text-align: center;
+}
+
+#acara6 {
+  margin-left: 2vw;
+  text-align: center;
+}
+
 .swiper-slide-acara h5 {
   font-size: 6vw;
   padding-right: 4vw;
@@ -495,7 +504,7 @@ body {
 
 .swiper-slide-misi {
   text-align: center;
-  padding-top: 4vw;
+  padding-top: 4.5vw;
   display: flex;
   flex-direction: column;
 
@@ -672,13 +681,13 @@ body {
   display: none;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .wayang-kanan {
     left: 15vw;
   }
 }
 
-@media only screen and (min-device-width: 1025px) {
+@media only screen and (min-width: 1025px) {
   .bg-base-mobile {
     display: none;
     visibility: hidden;
@@ -956,6 +965,15 @@ body {
     height: 14.3vw;
   }
 
+  #acara1 {
+    text-align: center;
+  }
+
+  #acara6 {
+    margin-left: 0vw;
+    text-align: left;
+  }
+
   .swiper-slide-acara h5 {
     font-size: 3vw;
     padding-right: 4vw;
@@ -1183,16 +1201,19 @@ body {
     text-align: unset;
     justify-content: center;
   }
+
   .text-sponsor {
     width: 50%;
     height: fit-content;
   }
+
   .text-sponsor h2 {
     font-size: 3vw;
     align-items: center;
     text-align: center;
     margin: 10vw 0 2vw 0;
   }
+
   .company-logo {
     width: 40%;
     margin: 0 14vw;
@@ -1202,6 +1223,7 @@ body {
 /* .hidden {
   opacity: 0;
 }
+
 .visible {
   opacity: 1;
   transition: opacity 1s ease-out;
