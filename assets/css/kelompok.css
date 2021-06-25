@@ -46,6 +46,11 @@ div.kelompok nav ul li {
   cursor: pointer;
 }
 
+.hr-styled {
+  border: 1vw solid white;
+  width: 100%;
+}
+
 li.menu {
   padding: 0 40px;
   display: flex;
