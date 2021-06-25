@@ -129,6 +129,9 @@ const Kelompok = () => {
             </li>
           </ul>
         </div>
+        <button className="close-btn" onClick={() => setShowOverlay(false)}>
+          Tutup
+        </button>
       </div>
       {/* <BgKelompokPhone /> */}
       <div onClick={() => setShowOverlay(false)}>

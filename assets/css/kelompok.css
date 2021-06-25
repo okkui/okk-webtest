@@ -59,6 +59,15 @@ li.menu {
   border-right: 1px solid black;
 } */
 
+.close-btn {
+  border-radius: 7vw;
+  width: 25vw;
+  height: 8vw;
+  font-size: 4.3vw;
+  background-color: #fff;
+  border: none;
+}
+
 div.kelompok-container {
   display: flex;
   justify-content: space-between;
