@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      href="./assets/image/ornament/logo-okk.png"
-      type="image/x-icon"
-    />
-    <title>Document</title>
+    <title>OKK UI 2020</title>
 
     <!-- !!!Links -->
     <link rel="stylesheet" href="assets/css/home.css" />
@@ -28,6 +23,11 @@
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="icon"
+      href="assets/image/ornament/logo-okk.png"
+      type="image/x-icon"
+    />
   </head>
 
   <body class="noscroll">
@@ -36,15 +36,18 @@
       <nav id="navbar-wrapper" class="navbar-wrapper">
         <div class="logo-okk-nav">
           <a href="index.html"
-            ><img id="logo-okk" src="assets/image/ornament/logo-okk.png" alt=""
+            ><img
+              id="logo-okk"
+              src="assets/image/ornament/logo-okk.png"
+              alt="OKK UI 2021"
           /></a>
         </div>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="assets/html/misi1.html">Misi</a></li>
-          <li><a href="assets/html/kelompok.html">Kelompok</a></li>
-          <li><a href="assets/html/tentang.html">Tentang</a></li>
-          <li><a href="assets/html/kontak.html">Kontak</a></li>
+          <li><a href="misi1.html">Misi</a></li>
+          <li><a href="kelompok.html">Kelompok</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
         </ul>
         <button class="close-nav-button" onclick="closeMenu()">TUTUP</button>
       </nav>
@@ -64,7 +67,7 @@
         <!-- Mobile Landing Background -->
         <img
           class="bg-base-mobile"
-          src="assets/image/mobile/bg-mobilelanding1.svg"
+          src="assets/image/mobile/bg-mobilelanding1.png"
         />
         <div class="awan">
           <img class="awan-kiri" src="assets/image/ornament/awan-kiri.png" />
@@ -86,7 +89,7 @@
           <div class="title-okk">
             <h3>OKK UI 2021</h3>
             <h1>RAGAM GELORA</h1>
-            <a href="assets/html/tentang.html"
+            <a href="tentang.html"
               ><button class="cta-tentang">TENTANG OKK UI 2021</button></a
             >
             <img
@@ -327,7 +330,7 @@
             Ayo cari tahu kelompok dan kakak mentor kamu yang akan menemani kamu
             selama OKK UI berlangsung!
           </p>
-          <a href="assets/html/kelompok.html"
+          <a href="kelompok.html"
             ><button class="cta-kelompok">CEK DI SINI</button></a
           >
         </div>
@@ -420,11 +423,6 @@
       </div>
     </div>
 
-    <!-- Loading Screen Animation -->
-    <div class="loader-wrapper">
-      <span class="loader"><span class="loader-inner"></span></span>
-    </div>
-
     <!-- !!!Script Areas -->
     <!-- *Animejs -->
     <script src="assets/js/anime.min.js"></script>
@@ -439,19 +437,6 @@
     <!-- *Swiperjs -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- ?Loading Screen Script -->
-    <script>
-      var noScroll = document.querySelector('body');
-      var loader = document.querySelector('.loader-wrapper');
-
-      window.addEventListener('load', vanish);
-
-      function vanish() {
-        loader.classList.add('disappear');
-        noScroll.classList.remove('noscroll');
-      }
-    </script>
 
     <!-- ?Animation Script animejs -->
     <script>

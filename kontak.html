@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
-      href="../image/ornament/logo-okk.png"
+      href="./assets/image/ornament/logo-okk.png"
       type="image/x-icon"
     />
     <title>OKK UI 2021 | Kontak</title>
     <!-- !!!Links -->
-    <link rel="stylesheet" href="../css/kontak.css" />
+    <link rel="stylesheet" href="./assets/css/kontak.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -27,6 +27,11 @@
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="icon"
+      href="./assets/image/ornament/logo-okk.png"
+      type="image/x-icon"
+    />
   </head>
   <body class="noscroll">
     <div class="whole-wrap">
@@ -39,13 +44,13 @@
         <nav id="navbar-wrapper" class="navbar-wrapper">
           <div class="logo-okk-nav">
             <a href="index.html"
-              ><img id="logo-okk" src="../image/ornament/logo-okk.png" alt=""
+              ><img id="logo-okk" src="./assets/image/ornament/logo-okk.png" alt=""
             /></a>
           </div>
           <div>
             <ul>
-              <li><a href="../../index.html">Home</a></li>
-              <li><a href="misi.html">Misi</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="misi1.html">Misi</a></li>
               <li><a href="kelompok.html">Kelompok</a></li>
               <li><a href="tentang.html">Tentang</a></li>
               <li><a href="kontak.html">Kontak</a></li>
@@ -64,8 +69,9 @@
               <h2>Narahubung</h2>
             </div>
             <div>
-              <p>ABCD<br>01100 1001</p>
-              <p>LDI TEMP<br>1101 1001 0010 0100</p>
+              <p>Rayyan<br>085711383842</p>
+              <p>Aurel<br>085776962014</p>
+              <p>Baihaqi<br>082115790702</p>
             </div>
           </div>
           <div class="sekretariat d-flex flex-column w-100 text-center">
@@ -78,7 +84,7 @@
           </div>
         </div>
         <div class="button-wrapper d-flex justify-content-center mt-3">
-          <a href="../../index.html">
+          <a href="index.html">
             <button class="button-back">
               <h3 class="font-back">&lt; Kembali ke halaman utama</h3>
             </button>
@@ -102,14 +108,14 @@
             <h2>Disponsori oleh</h2>
             <img
               class="company-logo"
-              src="../image/ornament/rumah-honai.png"
+              src="./assets/image/ornament/rumah-honai.png"
               alt=""
             />
           </div>
           <div class="sponsor-wrap">
             <h2>Rekan Media</h2>
             <img
-              src="../image/ornament/rumah-honai.png"
+              src="./assets/image/ornament/rumah-honai.png"
               class="company-logo"
             />
           </div>
@@ -177,17 +183,12 @@
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <script type="text/babel" src="../components/Footer.js"></script>
+    <script type="text/babel" src="./assets/components/Footer.js"></script>
     <script type="text/babel">
     </script>
 
-    <!-- Loading Screen Animation -->
-    <div class="loader-wrapper">
-      <span class="loader"><span class="loader-inner"></span></span>
-    </div>
-
     <!-- *Animejs -->
-    <script src="../js/anime.min.js"></script>
+    <script src="./assets/js/anime.min.js"></script>
 
     <!-- *Bootstrap -->
     <script
@@ -199,19 +200,6 @@
     <!-- *Swiperjs -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- ?Loading Screen Script -->
-    <script>
-      var noScroll = document.querySelector("body");
-      var loader = document.querySelector(".loader-wrapper");
-
-      window.addEventListener("load", vanish);
-
-      function vanish() {
-        loader.classList.add("disappear");
-        noScroll.classList.remove("noscroll");
-      }
-    </script>
 
     <!-- ?Swiper Script swiperjs-->
     <script>
