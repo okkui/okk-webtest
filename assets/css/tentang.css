@@ -220,8 +220,16 @@ body {
   width: 60vw;
 }
 
+.footer {
+  width: 100vw;
+  height: 90vw;
+  display: flex;
+  background: #000;
+  color: #fff;
+}
+
 /*!!!DESKTOP  */
-@media only screen and (min-device-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .bg-base-mobile {
     display: none;
     visibility: hidden;
@@ -397,6 +405,4 @@ body {
     height: 0.5vw;
     background: white;
   }
-
-  
 }
