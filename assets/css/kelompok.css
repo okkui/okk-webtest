@@ -228,6 +228,14 @@ div.sponsor {
   border-right: 1px solid black;
 }
 
+div.cdy {
+  width: 40vw;
+}
+
+.cdy h4 {
+  width: 100%;
+}
+
 /* footer {
   background-color: black;
   height: 300px;

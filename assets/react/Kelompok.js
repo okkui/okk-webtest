@@ -213,27 +213,51 @@ const Kelompok = () => {
       <footer className="wrapper1 section-footer">
         <div className="contact-footer">
           <div className="contact-footer-content">
-            <div className="contact-div">
-              <h3>Linimasa:</h3>
-            </div>
-            <div className="contact-div">
-              <img
-                className="contact-icon contact-line"
-                src="https://img.icons8.com/windows/500/ffffff/line-me.png"
-              />
-              <h4>@okkui</h4>
-            </div>
-            <div className="contact-div">
-              <i className="contact-icon bx bxl-instagram"></i>
-              <h4>@okk_ui</h4>
-            </div>
-            <div className="contact-div">
-              <i className="contact-icon bx bxl-twitter"></i>
-              <h4>@OKK_UI</h4>
-            </div>
-            <div className="contact-div">
-              <i className="contact-icon bx bxl-facebook-square"></i>
-              <h4>OKK UI</h4>
+            <div className="social-media">
+              <div className="social-media-side">
+                <div className="contact-div">
+                  <h3>Linimasa:</h3>
+                </div>
+                <div className="contact-div">
+                  <img
+                    className="contact-icon contact-line"
+                    src="https://img.icons8.com/windows/500/ffffff/line-me.png"
+                  />
+                  <h4>@okkui</h4>
+                </div>
+                <div className="contact-div">
+                  <i className="contact-icon bx bxl-instagram"></i>
+                  <h4>@okk_ui</h4>
+                </div>
+                <div className="contact-div">
+                  <i className="contact-icon bx bxl-twitter"></i>
+                  <h4>@OKK_UI</h4>
+                </div>
+              </div>
+              <div className="social-media-side">
+                <div className="contact-div">
+                  <i className="contact-icon bx bxl-facebook-square"></i>
+                  <h4>OKK UI</h4>
+                </div>
+
+                <div className="contact-div">
+                  <img
+                    className="contact-icon contact-line"
+                    src="https://img.icons8.com/ios-filled/50/ffffff/tiktok--v1.png"
+                  />
+                  <h4>@okk_ui</h4>
+                </div>
+
+                {/* <div className="contact-div" style="width: 40vw"> */}
+                <div className="contact-div cdy">
+                  <img
+                    className="contact-icon contact-line"
+                    src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png"
+                  />
+                  <h4>OKK Universitas Indonesia</h4>
+                  {/* <h4 style="width: 100%">OKK Universitas Indonesia</h4> */}
+                </div>
+              </div>
             </div>
             <div className="contact-person">
               <h4>Rayyan | (085711383842)</h4>
