@@ -64,10 +64,37 @@ const Hamburger = ({ setShowOverlay }) => (
   </svg>
 );
 
-const MentorBox = ({ namaMentor, gender = 'pria' }) => (
+const MentorBox = ({
+  namaMentor,
+  wa,
+  hp,
+  line,
+  ig,
+  prodi,
+  fakultas,
+  gender = 'pria',
+  num = 1,
+}) => (
   <>
-    <div className="box">{namaMentor}</div>
-    <div className="icon">
+    <div className="box">
+      {`Mentor ${num}`}
+      <div className={`data-mentor data-mentor${num}`}>
+        <p>
+          {`Nama: ${namaMentor}`} <br />
+          {`Fakultas: ${fakultas}`} <br />
+          {`Program Studi: ${prodi}`} <br />
+          {`HP: ${hp}`}
+          <br />
+          {`WA: ${wa}`}
+          <br />
+          {`Line: ${line}`}
+          <br />
+          {`IG: ${ig}`}
+          <br />
+        </p>
+      </div>
+    </div>
+    <div className={`icon icon-${gender}`}>
       <img
         src={
           gender === 'pria'
@@ -79,27 +106,82 @@ const MentorBox = ({ namaMentor, gender = 'pria' }) => (
   </>
 );
 
-const Mentor = ({ namaKelompok, namaMaba, namaMentor1, namaMentor2 }) => (
-  <div>
-    <div className="nama-maba">
-      <p>{namaMaba}</p>
-    </div>
-    <div className="nama-kelompok">
-      <p>{namaKelompok}</p>
-    </div>
-    <div className="mentor">
-      <div className="box-mentor mentor1">
-        <MentorBox namaMentor={namaMentor1} />
+const Mentor = ({
+  namaKelompok,
+  nama,
+  no_kelompok,
+  nama_mentor_1,
+  nama_mentor_2,
+  hp_mentor_1,
+  hp_mentor_2,
+  wa_mentor_1,
+  wa_mentor_2,
+  line_mentor_1,
+  line_mentor_2,
+  instagram_mentor_1,
+  instagram_mentor_2,
+  fakultas_mentor_1,
+  fakultas_mentor_2,
+  prodi_mentor_1,
+  prodi_mentor_2,
+}) => {
+  return (
+    <div>
+      <div className="nama-maba">
+        <p>{nama}</p>
       </div>
-      <div className="box-mentor mentor2">
-        <MentorBox namaMentor={namaMentor2} />
+      <div className="nama-kelompok">
+        <p>Kelompok-{no_kelompok}</p>
+      </div>
+      <div className="mentor">
+        <div className="box-mentor mentor1">
+          <MentorBox
+            namaMentor={nama_mentor_1}
+            wa={wa_mentor_1}
+            hp={hp_mentor_1}
+            line={line_mentor_1}
+            ig={instagram_mentor_1}
+            prodi={prodi_mentor_1}
+            fakultas={fakultas_mentor_1}
+          />
+        </div>
+        <div className="box-mentor mentor2">
+          <MentorBox
+            num={2}
+            namaMentor={nama_mentor_2}
+            wa={wa_mentor_2}
+            hp={hp_mentor_2}
+            line={line_mentor_2}
+            ig={instagram_mentor_2}
+            prodi={prodi_mentor_2}
+            fakultas={fakultas_mentor_2}
+            gender="wanita"
+          />
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const Kelompok = () => {
   const [showOverlay, setShowOverlay] = React.useState(false);
+  const [data, setData] = React.useState({ statusCode: 404, object: {} });
+  const [npm, setNpm] = React.useState('');
+
+  // const [statusCode, setStatusCode] = React.useState(0);
+
+  const getData = async (e) => {
+    e.preventDefault();
+    // 'http://34.87.157.140/api/dapatkanMentor/2106000019'
+    const dataBE = await axios.get(
+      `http://34.87.157.140/api/dapatkanMentor/${npm}`
+    );
+
+    setData({ statusCode: dataBE.data.code, object: dataBE.data.object });
+    // setStatusCode(dataBE.data.code);
+
+    console.log(dataBE);
+  };
 
   return (
     <>
@@ -168,8 +250,13 @@ const Kelompok = () => {
                   <p>Cek Kelompokmu!</p>
                 </div>
                 <div className="search">
-                  <form>
-                    <input type="number" placeholder="Masukkan NPM" />
+                  <form onSubmit={getData}>
+                    <input
+                      type="number"
+                      value={npm}
+                      onChange={(e) => setNpm(e.target.value)}
+                      placeholder="Masukkan NPM"
+                    />
                     <button>
                       <SearchSVG />
                     </button>
@@ -183,12 +270,10 @@ const Kelompok = () => {
               </div>
             </div>
             <div className="cek-kelompok-right">
-              <Mentor
-                namaKelompok={'Kelompok 001'}
-                namaMaba={'Taufik Pragusga0'}
-                namaMentor1={'Taufik Pragusga1'}
-                namaMentor2={'Taufik Pragusga2'}
-              />
+              {data.statusCode === 200 && data.object.nama && (
+                <Mentor {...data.object} />
+              )}
+              {console.log(data.statusCode)}
             </div>
           </div>
         </div>

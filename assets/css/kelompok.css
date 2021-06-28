@@ -442,6 +442,33 @@ div.cdy {
     width: 250px;
     height: 275px;
   }
+
+  div.box-mentor div.box div.data-mentor p {
+    text-align: left;
+  }
+
+  div.data-mentor1 {
+    padding-left: 60px;
+    padding-right: 20px;
+  }
+  div.data-mentor2 {
+    padding-left: 20px;
+    padding-right: 60px;
+  }
+
+  div.icon-pria {
+    transform: translate(-30px);
+    /* background-color: red; */
+  }
+  div.icon-wanita {
+    transform: translateX(30px);
+    /* background-color: red; */
+  }
+
+  div.icon img {
+    height: 275px;
+    width: 140px;
+  }
 }
 
 @media only screen and (max-width: 452px) {
