@@ -467,9 +467,20 @@ body {
 
   .title-container {
     display: inline-block;
-    margin-left: 4vw;
     position: relative;
     bottom: 7.5vw;
+    width: 42%;
+    align-items: center;
+  }
+
+  .title-container h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .title-container h1 {
+    text-align: center;
+    width: 100%;
   }
 
   .content-container h2,
