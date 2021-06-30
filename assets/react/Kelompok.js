@@ -270,7 +270,7 @@ const Kelompok = () => {
                 </div>
               </div>
               <div
-                className="back"
+                className="toggle-search"
                 onClick={() => {
                   setIsLine((prev) => !prev);
                   setData({ statusCode: 404, object: {} });
