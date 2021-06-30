@@ -199,8 +199,12 @@ body {
   /*margin-bottom: 1px;*/
 }
 
+.calendar .days li .event.span-1 {
+  width: 175%;
+}
+
 .calendar .days li .event.span-2 {
-  width: 200%;
+  width: 250%;
 }
 
 .calendar .days li .event.span-3 {
@@ -210,6 +214,11 @@ body {
 .calendar .days li .event.span-4 {
   width: 400%;
 }
+
+.calendar .days li .event.span-5 {
+  width: 450%;
+}
+
 
 .calendar .days li .event.begin {
   border-radius: 1rem 0 0 1rem;
@@ -392,6 +401,7 @@ body {
   background: white;
 }
 
+
 @media only screen and (min-width: 1024px) {
   /* !!!Navigation Bar */
   .navbar-wrapper {
@@ -457,9 +467,20 @@ body {
 
   .title-container {
     display: inline-block;
-    margin-left: 10vw;
     position: relative;
     bottom: 7.5vw;
+    width: 42%;
+    align-items: center;
+  }
+
+  .title-container h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .title-container h1 {
+    text-align: center;
+    width: 100%;
   }
 
   .content-container h2,
@@ -562,7 +583,7 @@ body {
   }
 
   .calendar .days li .event.span-2 {
-    width: 200%;
+    width: 250%;
   }
 
   .calendar .days li .event.span-3 {
