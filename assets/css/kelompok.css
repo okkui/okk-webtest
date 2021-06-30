@@ -26,8 +26,8 @@ div.kelompok {
 }
 
 div.kelompok nav {
-  padding-top: 40px;
-  padding-right: 40px;
+  padding-top: 50px;
+  padding-right: 50px;
   /* font-family: 'Roboto', sans-serif; */
 }
 
@@ -52,7 +52,7 @@ div.kelompok nav ul li {
 }
 
 li.menu {
-  padding: 0 30px;
+  padding: 0 36px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -314,8 +314,9 @@ div.cdy {
     position: fixed;
     /* margin-top: 10px; */
     z-index: 10;
-    top: 10px;
-    right: 10px;
+    top: 8px;
+    right: 5px;
+    width: 28px;
 
     display: block;
   }

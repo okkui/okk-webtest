@@ -165,22 +165,22 @@ const Mentor = ({
 
 const Kelompok = () => {
   const [showOverlay, setShowOverlay] = React.useState(false);
+  const [isLine, setIsLine] = React.useState(false);
   const [data, setData] = React.useState({ statusCode: 404, object: {} });
-  const [npm, setNpm] = React.useState('');
-
-  // const [statusCode, setStatusCode] = React.useState(0);
+  const refInp = React.useRef();
 
   const getData = async (e) => {
     e.preventDefault();
-    // 'http://34.87.157.140/api/dapatkanMentor/2106000019'
-    const dataBE = await axios.get(
-      `http://34.87.157.140/api/dapatkanMentor/${npm}`
-    );
-
-    setData({ statusCode: dataBE.data.code, object: dataBE.data.object });
-    // setStatusCode(dataBE.data.code);
-
-    console.log(dataBE);
+    const link = isLine
+      ? 'https://temporer.xyz/api/dapatkanMentorPakaiLine/'
+      : 'https://temporer.xyz/api/dapatkanMentor/';
+    await axios
+      .get(`${link}${refInp.current.value}`)
+      .then((d) => setData({ statusCode: d.data.code, object: d.data.object }))
+      .catch((err) => {
+        setData({ statusCode: 404, object: {} });
+        throw err;
+      });
   };
 
   return (
@@ -221,7 +221,6 @@ const Kelompok = () => {
           TUTUP
         </button>
       </div>
-      {/* <BgKelompokPhone /> */}
       <div onClick={() => setShowOverlay(false)}>
         <div className="kelompok">
           <nav>
@@ -251,17 +250,39 @@ const Kelompok = () => {
                 </div>
                 <div className="search">
                   <form onSubmit={getData}>
-                    <input
-                      type="number"
-                      value={npm}
-                      onChange={(e) => setNpm(e.target.value)}
-                      placeholder="Masukkan NPM"
-                    />
+                    {isLine ? (
+                      <input
+                        type="text"
+                        ref={refInp}
+                        placeholder="Masukkan ID LINE"
+                      />
+                    ) : (
+                      <input
+                        type="number"
+                        ref={refInp}
+                        placeholder="Masukkan NPM"
+                      />
+                    )}
                     <button>
                       <SearchSVG />
                     </button>
                   </form>
                 </div>
+              </div>
+              <div
+                className="back"
+                onClick={() => {
+                  setIsLine((prev) => !prev);
+                  setData({ statusCode: 404, object: {} });
+                }}
+              >
+                <p>
+                  <a>
+                    {isLine
+                      ? 'Cari Berdasarkan NPM'
+                      : 'Cari Berdasarkan ID LINE'}
+                  </a>
+                </p>
               </div>
               <div className="back">
                 <p>
@@ -273,7 +294,6 @@ const Kelompok = () => {
               {data.statusCode === 200 && data.object.nama && (
                 <Mentor {...data.object} />
               )}
-              {console.log(data.statusCode)}
             </div>
           </div>
         </div>
