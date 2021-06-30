@@ -284,7 +284,7 @@ div.cdy {
 
 .overlay div ul {
   margin-top: 40px;
-  margin-left: -25vw;
+  margin-left: -28vw;
 }
 
 .overlay div ul li {
@@ -341,7 +341,7 @@ div.toggle-search {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 2px;
     z-index: 11;
     background: #19465e;
     top: 0;
@@ -350,6 +350,12 @@ div.toggle-search {
     height: 100vh;
     transition: all 0.5s ease-in;
     overflow: hidden;
+  }
+  .overlay div ul {
+    margin-top: 30px;
+  }
+  .overlay div ul li {
+    margin-top: 5vw;
   }
 
   .show-overlay {
