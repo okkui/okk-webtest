@@ -46,8 +46,12 @@
   /*margin-bottom: 1px;*/
 }
 
-.calendar .days li .event.span-2 {
+.calendar .days li .event.span-1 {
   width: 200%;
+}
+
+.calendar .days li .event.span-2 {
+  width: 250%;
 }
 
 .calendar .days li .event.span-3 {

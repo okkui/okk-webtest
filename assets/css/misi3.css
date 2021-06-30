@@ -1,0 +1,9 @@
+@media only screen and (min-width: 1024px) {
+
+    .title-container {
+        display: inline-block;
+        margin-left: 6vw;
+        position: relative;
+        bottom: 7.5vw;
+    }
+}
