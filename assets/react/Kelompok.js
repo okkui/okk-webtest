@@ -85,11 +85,13 @@ const MentorBox = ({
           {`Program Studi: ${prodi}`} <br />
           {`HP: ${hp}`}
           <br />
-          {`WA: ${wa}`}
+          <a
+            href={`https://api.whatsapp.com/send?phone=${wa}`}
+          >{`WA: ${wa}`}</a>
           <br />
-          {`Line: ${line}`}
+          <a href={`https://line.me/ti/p/~${line}`}>{`Line: ${line}`}</a>
           <br />
-          {`IG: ${ig}`}
+          <a href={`https://www.instagram.com/${ig}/`}>{`IG: ${ig}`}</a>
           <br />
         </p>
       </div>
@@ -107,7 +109,6 @@ const MentorBox = ({
 );
 
 const Mentor = ({
-  namaKelompok,
   nama,
   no_kelompok,
   nama_mentor_1,
@@ -166,7 +167,9 @@ const Mentor = ({
 const Kelompok = () => {
   const [showOverlay, setShowOverlay] = React.useState(false);
   const [isLine, setIsLine] = React.useState(false);
+
   const [data, setData] = React.useState({ statusCode: 404, object: {} });
+
   const refInp = React.useRef();
 
   const getData = async (e) => {
@@ -176,9 +179,12 @@ const Kelompok = () => {
       : 'https://temporer.xyz/api/dapatkanMentor/';
     await axios
       .get(`${link}${refInp.current.value}`)
-      .then((d) => setData({ statusCode: d.data.code, object: d.data.object }))
+      .then((d) => {
+        setData({ statusCode: d.data.code, object: d.data.object });
+      })
       .catch((err) => {
         setData({ statusCode: 404, object: {} });
+        window.alert('Data Tidak Ditemukan');
         throw err;
       });
   };
