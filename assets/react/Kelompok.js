@@ -204,7 +204,7 @@ const Kelompok = () => {
               <a href="index.html">Home</a>
             </li>
             <li>
-              <a href="misi.html">Misi</a>
+              <a href="misi1.html">Misi</a>
             </li>
             <li>
               <a href="kelompok.html">Kelompok</a>
@@ -229,7 +229,7 @@ const Kelompok = () => {
                 <a href="index.html">Home</a>
               </li>
               <li className="menu menu-border-right">
-                <a href="misi.html">Misi</a>
+                <a href="misi1.html">Misi</a>
               </li>
               <li className="menu menu-border-right">
                 <a href="kelompok.html">Kelompok</a>
