@@ -11,6 +11,11 @@
   color: #fff;
 }
 
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
 .contact-container {
   width: 50vw;
   height: 90vw;
