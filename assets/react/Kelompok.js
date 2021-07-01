@@ -96,7 +96,7 @@ const MentorBox = ({
           >{`Line: ${line}`}</a>
           <br />
           <a
-            href={`https://www.instagram.com/${ig}/`}
+            href={`https://www.instagram.com/${ig.replace('@', '')}/`}
             className="color-ig"
           >{`IG: ${ig.replace('@', '')}`}</a>
           <br />
