@@ -83,15 +83,22 @@ const MentorBox = ({
           {`Nama: ${namaMentor}`} <br />
           {`Fakultas: ${fakultas}`} <br />
           {`Program Studi: ${prodi}`} <br />
-          {`HP: ${hp}`}
+          {`HP: 0${hp}`}
           <br />
           <a
-            href={`https://api.whatsapp.com/send?phone=${wa}`}
-          >{`WA: ${wa}`}</a>
+            href={`https://api.whatsapp.com/send?phone=62${wa}`}
+            className="color-wa"
+          >{`WA: 0${wa}`}</a>
           <br />
-          <a href={`https://line.me/ti/p/~${line}`}>{`Line: ${line}`}</a>
+          <a
+            href={`https://line.me/ti/p/~${line}`}
+            className="color-line"
+          >{`Line: ${line}`}</a>
           <br />
-          <a href={`https://www.instagram.com/${ig}/`}>{`IG: ${ig}`}</a>
+          <a
+            href={`https://www.instagram.com/${ig}/`}
+            className="color-ig"
+          >{`IG: ${ig.replace('@', '')}`}</a>
           <br />
         </p>
       </div>

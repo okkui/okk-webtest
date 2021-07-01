@@ -75,6 +75,16 @@ li.menu {
   margin-top: 5vw;
 }
 
+a.color-wa {
+  color: #25d366 !important;
+}
+a.color-line {
+  color: #00b900 !important;
+}
+a.color-ig {
+  color: #5851db !important;
+}
+
 div.kelompok-container {
   display: flex;
   justify-content: space-between;
