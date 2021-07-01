@@ -515,6 +515,12 @@ body {
 
 /* Bagian Sponsor */
 
+.wave{
+  position: relative;
+  z-index: 10;
+  bottom: 20vw;
+}
+
 .section-credits {
   display: flex;
   flex-wrap: wrap;
@@ -1011,6 +1017,11 @@ body {
   }
 
   /* Bagian Sponsor */
+
+.wave{
+  display: none;
+  visibility: hidden;
+}
 
   .section-credits {
     display: flex;
