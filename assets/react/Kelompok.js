@@ -64,10 +64,39 @@ const Hamburger = ({ setShowOverlay }) => (
   </svg>
 );
 
-const MentorBox = ({ namaMentor, gender = 'pria' }) => (
+const MentorBox = ({
+  namaMentor,
+  wa,
+  hp,
+  line,
+  ig,
+  prodi,
+  fakultas,
+  gender = 'pria',
+  num = 1,
+}) => (
   <>
-    <div className="box">{namaMentor}</div>
-    <div className="icon">
+    <div className="box">
+      {`Mentor ${num}`}
+      <div className={`data-mentor data-mentor${num}`}>
+        <p>
+          {`Nama: ${namaMentor}`} <br />
+          {`Fakultas: ${fakultas}`} <br />
+          {`Program Studi: ${prodi}`} <br />
+          {`HP: ${hp}`}
+          <br />
+          <a
+            href={`https://api.whatsapp.com/send?phone=${wa}`}
+          >{`WA: ${wa}`}</a>
+          <br />
+          <a href={`https://line.me/ti/p/~${line}`}>{`Line: ${line}`}</a>
+          <br />
+          <a href={`https://www.instagram.com/${ig}/`}>{`IG: ${ig}`}</a>
+          <br />
+        </p>
+      </div>
+    </div>
+    <div className={`icon icon-${gender}`}>
       <img
         src={
           gender === 'pria'
@@ -79,27 +108,86 @@ const MentorBox = ({ namaMentor, gender = 'pria' }) => (
   </>
 );
 
-const Mentor = ({ namaKelompok, namaMaba, namaMentor1, namaMentor2 }) => (
-  <div>
-    <div className="nama-maba">
-      <p>{namaMaba}</p>
-    </div>
-    <div className="nama-kelompok">
-      <p>{namaKelompok}</p>
-    </div>
-    <div className="mentor">
-      <div className="box-mentor mentor1">
-        <MentorBox namaMentor={namaMentor1} />
+const Mentor = ({
+  nama,
+  no_kelompok,
+  nama_mentor_1,
+  nama_mentor_2,
+  hp_mentor_1,
+  hp_mentor_2,
+  wa_mentor_1,
+  wa_mentor_2,
+  line_mentor_1,
+  line_mentor_2,
+  instagram_mentor_1,
+  instagram_mentor_2,
+  fakultas_mentor_1,
+  fakultas_mentor_2,
+  prodi_mentor_1,
+  prodi_mentor_2,
+}) => {
+  return (
+    <div>
+      <div className="nama-maba">
+        <p>{nama}</p>
       </div>
-      <div className="box-mentor mentor2">
-        <MentorBox namaMentor={namaMentor2} />
+      <div className="nama-kelompok">
+        <p>Kelompok-{no_kelompok}</p>
+      </div>
+      <div className="mentor">
+        <div className="box-mentor mentor1">
+          <MentorBox
+            namaMentor={nama_mentor_1}
+            wa={wa_mentor_1}
+            hp={hp_mentor_1}
+            line={line_mentor_1}
+            ig={instagram_mentor_1}
+            prodi={prodi_mentor_1}
+            fakultas={fakultas_mentor_1}
+          />
+        </div>
+        <div className="box-mentor mentor2">
+          <MentorBox
+            num={2}
+            namaMentor={nama_mentor_2}
+            wa={wa_mentor_2}
+            hp={hp_mentor_2}
+            line={line_mentor_2}
+            ig={instagram_mentor_2}
+            prodi={prodi_mentor_2}
+            fakultas={fakultas_mentor_2}
+            gender="wanita"
+          />
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const Kelompok = () => {
   const [showOverlay, setShowOverlay] = React.useState(false);
+  const [isLine, setIsLine] = React.useState(false);
+
+  const [data, setData] = React.useState({ statusCode: 404, object: {} });
+
+  const refInp = React.useRef();
+
+  const getData = async (e) => {
+    e.preventDefault();
+    const link = isLine
+      ? 'https://temporer.xyz/api/dapatkanMentorPakaiLine/'
+      : 'https://temporer.xyz/api/dapatkanMentor/';
+    await axios
+      .get(`${link}${refInp.current.value}`)
+      .then((d) => {
+        setData({ statusCode: d.data.code, object: d.data.object });
+      })
+      .catch((err) => {
+        setData({ statusCode: 404, object: {} });
+        window.alert('Data Tidak Ditemukan');
+        throw err;
+      });
+  };
 
   return (
     <>
@@ -122,7 +210,7 @@ const Kelompok = () => {
               <a href="index.html">Home</a>
             </li>
             <li>
-              <a href="misi.html">Misi</a>
+              <a href="misi1.html">Misi</a>
             </li>
             <li>
               <a href="kelompok.html">Kelompok</a>
@@ -139,7 +227,6 @@ const Kelompok = () => {
           TUTUP
         </button>
       </div>
-      {/* <BgKelompokPhone /> */}
       <div onClick={() => setShowOverlay(false)}>
         <div className="kelompok">
           <nav>
@@ -148,7 +235,7 @@ const Kelompok = () => {
                 <a href="index.html">Home</a>
               </li>
               <li className="menu menu-border-right">
-                <a href="misi.html">Misi</a>
+                <a href="misi1.html">Misi</a>
               </li>
               <li className="menu menu-border-right">
                 <a href="kelompok.html">Kelompok</a>
@@ -168,13 +255,40 @@ const Kelompok = () => {
                   <p>Cek Kelompokmu!</p>
                 </div>
                 <div className="search">
-                  <form>
-                    <input type="number" placeholder="Masukkan NPM" />
+                  <form onSubmit={getData}>
+                    {isLine ? (
+                      <input
+                        type="text"
+                        ref={refInp}
+                        placeholder="Masukkan ID LINE"
+                      />
+                    ) : (
+                      <input
+                        type="number"
+                        ref={refInp}
+                        placeholder="Masukkan NPM"
+                      />
+                    )}
                     <button>
                       <SearchSVG />
                     </button>
                   </form>
                 </div>
+              </div>
+              <div
+                className="toggle-search"
+                onClick={() => {
+                  setIsLine((prev) => !prev);
+                  setData({ statusCode: 404, object: {} });
+                }}
+              >
+                <p>
+                  <a>
+                    {isLine
+                      ? 'Cari Berdasarkan NPM'
+                      : 'Cari Berdasarkan ID LINE'}
+                  </a>
+                </p>
               </div>
               <div className="back">
                 <p>
@@ -183,12 +297,9 @@ const Kelompok = () => {
               </div>
             </div>
             <div className="cek-kelompok-right">
-              <Mentor
-                namaKelompok={'Kelompok 001'}
-                namaMaba={'Taufik Pragusga0'}
-                namaMentor1={'Taufik Pragusga1'}
-                namaMentor2={'Taufik Pragusga2'}
-              />
+              {data.statusCode === 200 && data.object.nama && (
+                <Mentor {...data.object} />
+              )}
             </div>
           </div>
         </div>
@@ -213,27 +324,51 @@ const Kelompok = () => {
       <footer className="wrapper1 section-footer">
         <div className="contact-footer">
           <div className="contact-footer-content">
-            <div className="contact-div">
-              <h3>Linimasa:</h3>
-            </div>
-            <div className="contact-div">
-              <img
-                className="contact-icon contact-line"
-                src="https://img.icons8.com/windows/500/ffffff/line-me.png"
-              />
-              <h4>@okkui</h4>
-            </div>
-            <div className="contact-div">
-              <i className="contact-icon bx bxl-instagram"></i>
-              <h4>@okk_ui</h4>
-            </div>
-            <div className="contact-div">
-              <i className="contact-icon bx bxl-twitter"></i>
-              <h4>@OKK_UI</h4>
-            </div>
-            <div className="contact-div">
-              <i className="contact-icon bx bxl-facebook-square"></i>
-              <h4>OKK UI</h4>
+            <div className="social-media">
+              <div className="social-media-side">
+                <div className="contact-div">
+                  <h3>Linimasa:</h3>
+                </div>
+                <div className="contact-div">
+                  <img
+                    className="contact-icon contact-line"
+                    src="https://img.icons8.com/windows/500/ffffff/line-me.png"
+                  />
+                  <h4>@okkui</h4>
+                </div>
+                <div className="contact-div">
+                  <i className="contact-icon bx bxl-instagram"></i>
+                  <h4>@okk_ui</h4>
+                </div>
+                <div className="contact-div">
+                  <i className="contact-icon bx bxl-twitter"></i>
+                  <h4>@OKK_UI</h4>
+                </div>
+              </div>
+              <div className="social-media-side">
+                <div className="contact-div">
+                  <i className="contact-icon bx bxl-facebook-square"></i>
+                  <h4>OKK UI</h4>
+                </div>
+
+                <div className="contact-div">
+                  <img
+                    className="contact-icon contact-line"
+                    src="https://img.icons8.com/ios-filled/50/ffffff/tiktok--v1.png"
+                  />
+                  <h4>@okk_ui</h4>
+                </div>
+
+                {/* <div className="contact-div" style="width: 40vw"> */}
+                <div className="contact-div cdy">
+                  <img
+                    className="contact-icon contact-line"
+                    src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png"
+                  />
+                  <h4>OKK Universitas Indonesia</h4>
+                  {/* <h4 style="width: 100%">OKK Universitas Indonesia</h4> */}
+                </div>
+              </div>
             </div>
             <div className="contact-person">
               <h4>Rayyan | (085711383842)</h4>
